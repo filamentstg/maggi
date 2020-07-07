@@ -274,7 +274,7 @@ export default class CarouselSection extends React.PureComponent {
                     className="btn btn-primary"
                     style={{ fontSize: "1rem", marginTop: '1em' }}
                   >
-                    Make a Balanced Bowl
+                    Make Your Balanced Bowl
                   </button>
                 </Link>
               </div>

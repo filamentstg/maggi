@@ -8,8 +8,10 @@
     &_header {
       width: 90%;
       margin: auto;
+      background-size: contain !important;
       background-repeat: no-repeat !important;
       background-position: center !important;
+
     }
     &_body {
       display: flex;
