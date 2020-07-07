@@ -146,7 +146,7 @@ export default class MakeBalancedBowlPage extends Component {
             <button className="btn btn-primary" onClick={this.nextStep}>
               {lang.START_NOW}
             </button>
-            <p className="caption">{lang.INTRO_HINT}</p>
+            <p className="caption one-line">{lang.INTRO_HINT}</p>
           </div>
         );
       case 1:
