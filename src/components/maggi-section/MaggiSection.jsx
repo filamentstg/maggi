@@ -24,7 +24,7 @@ export default class MaggiSectionComponent extends React.PureComponent {
         </div>
         <div className="columns custom-mobile" style={{ margin: 0 }}>
           <div
-            className="column is-8-desktop is-8-widescreen is-8-fullhd"
+            className="column is-8-desktop is-8-widescreen is-8-fullhd custom-mobile-ingredient"
             style={{ width: "64%", margin: 'auto' }}
           >
             <div className="custom-box">

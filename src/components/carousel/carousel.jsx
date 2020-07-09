@@ -34,7 +34,7 @@ const Step_1 = () => {
           <div className="step-1-2"></div>
         </div>
       </div>
-      <div className="columns is-gapless">
+      <div className="columns is-gapless is-mobile">
         <div className="column is-6">
           <span className="sub-title-custom">1 fistful</span>
         </div>
@@ -60,7 +60,7 @@ const Step_2 = () => {
           <div className="step-2-2"></div>
         </div>
       </div>
-      <div className="columns is-gapless">
+      <div className="columns is-gapless is-mobile">
         <div className="column is-6">
           <span className="sub-title-custom">1 palm size</span>
         </div>
@@ -77,7 +77,7 @@ const Step_3 = () => {
     <>
       <h1>Step 3</h1>
       <p style={{ padding: "0 4em" }}>Pick vegetables to add to your noodles</p>
-      <div className="columns steps">
+      <div className="columns steps mobile-step-3">
         <span className="steps-equal">=</span>
         <div
           className="column is-6 step"
@@ -89,7 +89,7 @@ const Step_3 = () => {
           <div className="step-3-2"></div>
         </div>
       </div>
-      <div className="columns is-gapless">
+      <div className="columns is-gapless is-mobile">
         <div className="column is-6">
           <span className="sub-title-custom">1 handful</span>
         </div>
@@ -161,7 +161,7 @@ export default class CarouselSection extends React.PureComponent {
               <span>and a glass of water</span>
               <div className="stroke"></div>
             </div>
-            <div className="main-carousel-balance-bowl columns is-gapless">
+            <div className="main-carousel-balance-bowl columns is-gapless is-mobile">
               <div className="column is-6">
                 <div style={{ height: "50%" }}>
                   <div

@@ -1,0 +1,228 @@
+@media only screen and (min-width: 540px) and (max-width: 639px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .landing-page {
+    background: url("../../images/layout/Maggi Website_plain bg_1024px.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-position-x: center;
+    margin: auto;
+    &-container {
+      width: 500px;
+      margin: auto;
+    }
+  }
+  .mobile-menu {
+    &-item {
+      font-size: 28px !important;
+    }
+  }
+  .main-header {
+    padding: 80px 0 !important;
+    &_logo {
+      height: 10.5em;
+      width: 10.5em;
+      left: 1em;
+    }
+    &_menu {
+      padding: 0 3em;
+    }
+  }
+  .main-carousel {
+    &-balance-bowl {
+      height: 25em !important;
+      &-full {
+        height: 25em !important;
+      }
+      &-carbohydrates {
+        span {
+          font-size: 1em !important;
+          bottom: 1.4em !important;
+          left: 3em !important;
+        }
+      }
+      &-protein {
+        span {
+          font-size: 1em !important;
+          top: 3em !important;
+          left:3.5em !important;
+        }
+      }
+      &-vegetable {
+        span {
+          font-size: 1em !important;
+          top: 5.1em !important;
+          right: .8em !important;
+        }
+      }
+    }
+    &-step {
+      .left-arrow {
+        left: 0em !important;
+      }
+      .right-arrow {
+        right: 0em !important;
+      }
+    }
+    .custom-mobile {
+      display: block !important;
+    }
+    .content {
+      justify-content: center !important;
+    }
+    .carousel {
+      height: 18rem !important;
+      &-root {
+        width: 28em !important;
+        margin: auto;
+      }
+    }
+    .sub-title-custom {
+      font-size: 1.3em;
+    }
+    .description {
+      padding: 0 9em !important;
+    }
+  }
+  .why-maggi {
+    padding: 5em 0em !important;
+    padding-bottom: 0 !important;
+    &-content {
+      padding: 1em 3em !important;
+    }
+  }
+  .custom-mobile {
+      display: block !important;
+      &-ingredient {
+        width: 90% !important;
+      }
+  }
+  .custom-box {
+    &-content{
+      margin: auto !important;
+    }
+    &-item {
+      img {
+        height: 100% !important;
+      }
+
+      .box-container {
+        &-content{
+          width: 80% !important;
+          margin: auto !important;
+        }
+      }
+    }
+  }
+  .convenience {
+    width: 90% !important;
+    margin: auto;
+    .right-box {
+      width: 100% !important;
+      img {
+        width: 100%;
+      }
+      .box-container {
+        width: 80%;
+        margin: auto;
+        img {
+          width: auto !important;
+        }
+      }
+    }
+  }
+  .delicious-recipes {
+    padding: 3em 0em !important;
+    &-header {
+      padding: 1.5em !important;
+      span {
+        font-size: 18px !important;
+      }
+      h1 {
+        margin-top: .3em;
+      }
+    }
+    .mobile-recipes {
+      width: 90%;
+      padding: 2em 0px;
+      margin: auto;
+      position: relative;
+      &-box {
+        padding: 1em 0;
+      }
+      .left-arrow {
+        left: -2em;
+      }
+      .right-arrow {
+        right: -2em;
+      }
+    }
+    .carousel .slide {
+      background: unset;
+    }
+    &_kari-box {
+      height: 56em !important;
+    }
+    &_ayam-box {
+      height: 56em !important;
+    }
+    &_tomyum-box {
+      height: 56em !important;
+    }
+    .delecious-bowl {
+      height: 11em !important;
+      width: auto !important;
+    }
+    &-calories {
+
+      margin-bottom: 1em !important;
+      span {
+        font-size: 18px !important;
+      }
+      &_header {
+        width: 27em;
+        margin: auto;
+        background-size: contain !important;
+      }
+      &_body {
+        height: 12.5em !important;
+        padding-top: 1em !important;
+        &-left {
+          width: 45% !important;
+          .caloiries {
+            height: 6em !important;
+            background-size: contain !important;
+          }
+        }
+        &-right {
+          padding-top: 2em !important;
+          .noodle {
+            height: 4.5em !important;
+          }
+          .food {
+            &-item {
+              height: 4.5em !important;
+            }
+          }
+          p {
+            margin-top: 0.5em !important;
+            font-size: 1rem !important;
+            padding: 0 3em !important;
+          }
+          &.multiple {
+            width: 75% !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            p {
+              padding: 0 10px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

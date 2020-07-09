@@ -1,0 +1,265 @@
+@media only screen and (min-width: 400px) and (max-width: 539px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    font-size: .9em;
+    font-family: Avenir;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+  }
+  .landing-page {
+    background: url("../../images/layout/Maggi Website_plain bg_1024px.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-position-x: center;
+    margin: auto;
+    &-container {
+      width: 380px;
+      margin: auto;
+    }
+  }
+  .mobile-menu {
+    &-item {
+      font-size: 22px !important;
+    }
+  }
+  .main-header {
+    padding: 45px 0 !important;
+    &_logo {
+      height: 6.5em;
+      width: 6.5em;
+      left: 1em;
+    }
+    &_menu {
+      padding: 0 1em;
+    }
+  }
+  .main-carousel {
+    &-balance-bowl {
+      height: 18em !important;
+      &-full {
+        height: 17.5em !important;
+      }
+      &-carbohydrates {
+        span {
+          font-size: .73em !important;
+          bottom: 1.5em !important;
+          left: 3.5em !important;
+        }
+      }
+      &-protein {
+        span {
+          font-size: .73em !important;
+          top: 3.4em !important;
+          left: 4.5em !important;
+        }
+      }
+      &-vegetable {
+        span {
+          font-size: .73em !important;
+          top: 5em !important;
+          right: 1.5em !important;
+        }
+      }
+    }
+    &-step {
+      .left-arrow {
+        left: 0em !important;
+      }
+      .right-arrow {
+        right: 0em !important;
+      }
+    }
+    .custom-mobile {
+      display: block !important;
+    }
+    .content {
+      justify-content: center !important;
+    }
+    .carousel {
+      height: 18rem !important;
+      &-root {
+        width: 24em !important;
+        margin: auto;
+      }
+    }
+    .sub-title-custom {
+      font-size: 1em;
+    }
+    .description {
+      padding: 0 2em !important;
+    }
+  }
+  .steps {
+    padding: 0 !important;
+    .step {
+      &-1-1 {
+        height: 5em !important;
+      }
+      &-1-2 {
+        height: 5em !important;
+      }
+      &-2-1 {
+        height: 5em !important;
+      }
+      &-2-2 {
+        height: 5em !important;
+      }
+      &-3-1 {
+        height: 3em !important;
+      }
+      &-3-2 {
+        height: 3em !important;
+      }
+    }
+    &.mobile-step-3 {
+      padding-top: 2em !important;
+    }
+  }
+  .why-maggi {
+    padding: 5em 0em !important;
+    padding-bottom: 0 !important;
+    &-content {
+      padding: 1em 3em !important;
+    }
+  }
+  .custom-mobile {
+      display: block !important;
+      &-ingredient {
+        width: 90% !important;
+      }
+  }
+  .custom-box {
+    &-content{
+      margin: auto !important;
+    }
+    &-item {
+      img {
+        height: 100% !important;
+      }
+
+      .box-container {
+        &-content{
+          width: 80% !important;
+          margin: auto !important;
+          p {
+            font-size: .9em !important;
+          }
+        }
+      }
+    }
+  }
+  .convenience {
+    width: 90% !important;
+    margin: auto;
+    .right-box {
+      width: 100% !important;
+      img {
+        width: 100%;
+      }
+      .box-container {
+        width: 80%;
+        margin: auto;
+        padding: 2em 0em !important;
+        img {
+          width: auto !important;
+        }
+      }
+    }
+  }
+  .delicious-recipes {
+    padding: 3em 0em !important;
+    &-header {
+      padding: 1em !important;
+      span {
+        font-size: 13px !important;
+      }
+      h1 {
+        margin-top: .1em !important;
+        margin-bottom: .5rem !important;
+      }
+    }
+    .mobile-recipes {
+      width: 90%;
+      padding: 1em 0px;
+      margin: auto;
+      position: relative;
+      &-box {
+        padding: 1em 0;
+      }
+      .left-arrow {
+        left: -2em;
+      }
+      .right-arrow {
+        right: -2em;
+      }
+    }
+    .carousel .slide {
+      background: unset;
+    }
+    &_kari-box {
+      height: 43em !important;
+    }
+    &_ayam-box {
+      height: 43em !important;
+    }
+    &_tomyum-box {
+      height: 43em !important;
+    }
+    .delecious-bowl {
+      height: 8em !important;
+      width: auto !important;
+    }
+    &-calories {
+
+      margin-bottom: 0em !important;
+      span {
+        font-size: 15px !important;
+      }
+      &_header {
+        width: 27em;
+        margin: auto;
+        background-size: contain !important;
+      }
+      &_body {
+        height: 10em !important;
+        padding-top: 0em !important;
+        &-left {
+          width: 45% !important;
+          .caloiries {
+            height: 5em !important;
+            background-size: contain !important;
+          }
+        }
+        &-right {
+          padding-top: 2em !important;
+          .noodle {
+            height: 4em !important;
+          }
+          .food {
+            &-item {
+              height: 4em !important;
+            }
+          }
+          p {
+            margin-top: 0.5em !important;
+            font-size: .7rem !important;
+            padding: 0 3em !important;
+          }
+          &.multiple {
+            width: 75% !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            p {
+              padding: 0 10px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

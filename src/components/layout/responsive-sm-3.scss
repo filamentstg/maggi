@@ -1,0 +1,217 @@
+@media only screen and (min-width: 640px) and (max-width: 799px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .landing-page {
+    background: url("../../images/layout/Maggi Website_plain bg_1024px.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-position-x: center;
+    margin: auto;
+    &-container {
+      width: 600px;
+      margin: auto;
+    }
+  }
+  .main-header {
+    padding: 80px 0 !important;
+    &_logo {
+      height: 10.5em;
+      width: 10.5em;
+      left: 1em;
+    }
+    &_menu {
+      padding: 0 3em;
+    }
+  }
+  .main-carousel {
+    &-balance-bowl {
+      height: 30em !important;
+      &-full {
+        height: 30em !important;
+      }
+      &-carbohydrates {
+        span {
+          font-size: 1.2em !important;
+          bottom: 1.7em !important;
+          left: 3em !important;
+        }
+      }
+      &-protein {
+        span {
+          font-size: 1.2em !important;
+          top: 3.5em !important;
+          left:4em !important;
+        }
+      }
+      &-vegetable {
+        span {
+          font-size: 1.2em !important;
+          top: 5.1em !important;
+          right: 1em !important;
+        }
+      }
+    }
+    &-step {
+      .left-arrow {
+        left: 2em !important;
+      }
+      .right-arrow {
+        right: 2em !important;
+      }
+    }
+    .custom-mobile {
+      display: block !important;
+    }
+    .content {
+      justify-content: center !important;
+    }
+    .carousel {
+      height: 18rem !important;
+      &-root {
+        width: 28em !important;
+        margin: auto;
+      }
+    }
+    .sub-title-custom {
+      font-size: 1.3em;
+    }
+    .description {
+      padding: 0 9em !important;
+    }
+  }
+  .why-maggi {
+    padding: 5em 0em !important;
+    padding-bottom: 0 !important;
+    &-content {
+      padding: 1em 3em !important;
+    }
+  }
+  .custom-mobile {
+      display: block !important;
+      &-ingredient {
+        width: 90% !important;
+      }
+  }
+  .custom-box {
+    &-content{
+      margin: auto !important;
+    }
+    &-item {
+      img {
+        height: 100% !important;
+      }
+
+      .box-container {
+        &-content{
+          width: 80% !important;
+          margin: auto !important;
+        }
+      }
+    }
+  }
+  .convenience {
+    width: 90% !important;
+    margin: auto;
+    .right-box {
+      width: 100% !important;
+      img {
+        width: 100%;
+      }
+      .box-container {
+        width: 80%;
+        margin: auto;
+        img {
+          width: auto !important;
+        }
+      }
+    }
+  }
+  .delicious-recipes {
+    padding: 3em 0em !important;
+    &-header {
+      padding: 2.5em !important;
+      span {
+        font-size: 20px !important;
+      }
+      h1 {
+        margin-top: .3em;
+      }
+    }
+    .mobile-recipes {
+      width: 90%;
+      padding: 2em 0px;
+      margin: auto;
+      position: relative;
+      &-box {
+        padding: 1em 0;
+      }
+    }
+    .carousel .slide {
+      background: unset;
+    }
+    &_kari-box {
+      height: 67em !important;
+    }
+    &_ayam-box {
+      height: 67em !important;
+    }
+    &_tomyum-box {
+      height: 67em !important;
+    }
+    .delecious-bowl {
+      height: 13em !important;
+      width: auto !important;
+    }
+    &-calories {
+
+      margin-bottom: 1em !important;
+      span {
+        font-size: 24px !important;
+      }
+      &_header {
+        width: 33em;
+        margin: auto;
+        background-size: contain !important;
+      }
+      &_body {
+        height: 13.5em !important;
+        padding-top: 1em !important;
+        &-left {
+          width: 40% !important;
+          .caloiries {
+            height: 7em !important;
+            background-size: contain !important;
+          }
+        }
+        &-right {
+          padding-top: 2em !important;
+          .noodle {
+            height: 5em !important;
+          }
+          .food {
+            &-item {
+              height: 5em !important;
+            }
+          }
+          p {
+            margin-top: 0.5em !important;
+            font-size: 1.1rem !important;
+            padding: 0 3em !important;
+          }
+          &.multiple {
+            width: 70% !important;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            p {
+              padding: 0 10px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
