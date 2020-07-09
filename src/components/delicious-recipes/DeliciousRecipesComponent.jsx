@@ -247,8 +247,21 @@ export default class DeliciousRecipiesComponent extends React.PureComponent {
                 </div>
               </div> :
               <div className="mobile-recipes">
+                <span
+                  role="button"
+                  className="left-arrow"
+                  onClick={this.prev}
+                  onKeyDown={this.prev}
+                ></span>
+                <span
+                  role="button"
+                  className="right-arrow"
+                  onClick={this.next}
+                  onKeyDown={this.next}
+                ></span>
                 <Carousel
-                  autoPlay={true}
+                  autoPlay={false}
+                  swipeable
                   infiniteLoop
                   statusFormatter={() => ""}
                   showIndicators={false}
@@ -269,7 +282,7 @@ export default class DeliciousRecipiesComponent extends React.PureComponent {
                     </div>
                     <img className="delecious-bowl" src={base1} alt="" />
                   </div>
-                  <div key="slide2">
+                  <div key="slide2" className="mobile-recipes-box">
                     <div className="delicious-recipes_ayam-box">
                       <div className="delicious-recipes-header">
                         <span>MAGGI® 2-Minute Noodles</span>
@@ -281,7 +294,7 @@ export default class DeliciousRecipiesComponent extends React.PureComponent {
                     </div>
                     <img className="delecious-bowl" src={base2} alt="" />
                   </div>
-                  <div key="slide3">
+                  <div key="slide3" className="mobile-recipes-box">
                     <div className="delicious-recipes_tomyum-box">
                       <div className="delicious-recipes-header">
                         <span>MAGGI® 2-Minute Noodles</span>

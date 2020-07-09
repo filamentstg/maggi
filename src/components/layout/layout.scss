@@ -52,6 +52,7 @@ p {
     background-repeat: no-repeat;
     left: 0;
     top: 1.5em;
+    z-index: 10;
   }
   &_menu {
     display: flex;

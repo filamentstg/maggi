@@ -102,3 +102,47 @@ button {
 .one-line {
   white-space: nowrap;
 }
+.mobile-menu {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0.9;
+  z-index: 5;
+  transition: all .3s ease-out;
+  &-close-btn {
+    top: 3em;
+    cursor: pointer;
+    position: absolute;
+    right: 3em;
+  }
+  &-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding-top: 7em;
+  }
+  &-item {
+    height: 33%;
+    line-height: 1.7em;
+    font-size: 40px;
+    font-family: "AvenirNext";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      color: #646464;
+      a {
+        color: #646464;
+      }
+    }
+    cursor: pointer;
+    a {
+      transition: color 0.3s ease-in;
+      color: $primary-color;
+      // color: #000;
+    }
+  }
+}

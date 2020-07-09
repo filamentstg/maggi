@@ -56,5 +56,33 @@
     margin-bottom: 6em;
   }
 
+  .left-arrow {
+    position: absolute;
+    background: url("../../images/layout/left_arrow.png");
+    height: 1.5em;
+    width: 1.5em;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    top: 50%;
+    left: -5em;
+    transform: translateY(-50%);
+  }
+
+  .right-arrow {
+    position: absolute;
+    background: url("../../images/layout/right_arrow.png");
+    height: 1.5em;
+    width: 1.5em;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    top: 50%;
+    right: -5em;
+    transform: translateY(-50%);
+}
+
 
 }
