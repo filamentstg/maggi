@@ -81,7 +81,6 @@ const Step_3 = () => {
         <span className="steps-equal">=</span>
         <div
           className="column is-6 step"
-          style={{ padding: ".5em 2em" }}
         >
           <div className="step-3-1"></div>
         </div>

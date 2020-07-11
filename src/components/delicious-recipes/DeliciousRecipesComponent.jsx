@@ -202,9 +202,10 @@ export default class DeliciousRecipiesComponent extends React.PureComponent {
 
   render() {
     const {isMobile} = this.state;
+    const hideArrowBtn = window.innerWidth < 500 ? true : false;
     return (
       <>
-        <div data-aos="fade-up" className="delicious-recipes" id="delicious-recipes">
+        <div data-aos="fade-up" data-aos-offset="0" className="delicious-recipes" id="delicious-recipes">
           <h1>Delicious Recipes</h1>
           {
             !isMobile ?
@@ -247,18 +248,23 @@ export default class DeliciousRecipiesComponent extends React.PureComponent {
                 </div>
               </div> :
               <div className="mobile-recipes">
-                <span
-                  role="button"
-                  className="left-arrow"
-                  onClick={this.prev}
-                  onKeyDown={this.prev}
-                ></span>
-                <span
-                  role="button"
-                  className="right-arrow"
-                  onClick={this.next}
-                  onKeyDown={this.next}
-                ></span>
+                {
+                  !hideArrowBtn &&
+                  <>
+                    <span
+                      role="button"
+                      className="left-arrow"
+                      onClick={this.prev}
+                      onKeyDown={this.prev}
+                    ></span>
+                    <span
+                      role="button"
+                      className="right-arrow"
+                      onClick={this.next}
+                      onKeyDown={this.next}
+                    ></span>
+                  </>
+                }
                 <Carousel
                   autoPlay={false}
                   swipeable

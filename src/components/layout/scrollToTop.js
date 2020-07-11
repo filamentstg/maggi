@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { window } from "browser-monads";
+import { Link } from "gatsby";
 
 export default class ScrollToTop extends Component {
 	checkScrollTimeout = null;
@@ -51,13 +52,15 @@ export default class ScrollToTop extends Component {
 			<div className="scroll-top-btn">
 				{
 					this.state.isShowScrollBtn ? (
-						<button onClick={this.scrollToTop}>
-							<svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<line y1="-1" x2="16.1686" y2="-1" transform="matrix(0.732904 -0.680332 0.766549 0.642186 2 13)" stroke="white" stroke-width="2" />
-								<line y1="-1" x2="15.8326" y2="-1" transform="matrix(0.759259 0.650789 -0.740604 0.671942 11.979 3)" stroke="white" stroke-width="2" />
-							</svg>
+            <Link to="/#main-header">
+              <button className="scroll-top-btn-main" onClick={this.scrollToTop}>
+                <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line y1="-1" x2="16.1686" y2="-1" transform="matrix(0.732904 -0.680332 0.766549 0.642186 2 13)" stroke="white" stroke-width="2" />
+                  <line y1="-1" x2="15.8326" y2="-1" transform="matrix(0.759259 0.650789 -0.740604 0.671942 11.979 3)" stroke="white" stroke-width="2" />
+                </svg>
 
-						</button>
+              </button>
+            </Link>
 					) : null
 				}
 

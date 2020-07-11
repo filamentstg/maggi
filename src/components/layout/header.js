@@ -4,6 +4,7 @@ import { Link } from "gatsby";
 import { window } from "browser-monads";
 import menuIcon from '../../images/layout/iconfinder_menu-alt_134216.png';
 import closeIcon from '../../images/layout/close.png';
+// import tomato from '../../images/layout/tomato.jpg';
 const header_data = [
 	{
 		title: "Make Your Balanced Bowl",
@@ -61,7 +62,7 @@ class Header extends React.PureComponent {
           <Link to="/">
             <div className="main-header_logo" />
           </Link>
-          <div className="main-header_menu">
+          <div className="main-header_menu" id="main-header">
             {
               !isMobile ?
                 <>

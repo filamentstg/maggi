@@ -30,7 +30,7 @@ class IndexPage extends React.PureComponent {
           <CarouselSection />
         </div>
 
-        <div data-aos="fade-up">
+        <div data-aos="fade-up" data-aos-offset="0">
           <MaggiSection />
         </div>
         <DeliciousRecipes />
