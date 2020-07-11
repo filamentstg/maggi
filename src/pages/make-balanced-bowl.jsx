@@ -247,7 +247,7 @@ export default class MakeBalancedBowlPage extends Component {
                   ))}
                 </ul>
               </div>
-              <div className="step-content">
+              <div className={"step-content __" + this.state.activeStep.id}>
                 {this.renderStep(this.state.activeStep.id)}
                 {[1, 2, 3].indexOf(this.state.activeStep.id) > -1 ? (
                   <div className="hover-hint">
