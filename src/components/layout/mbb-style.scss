@@ -410,6 +410,13 @@
     .final-action {
       padding: 75px 0;
     }
+    .share-btn-gr {
+      margin: 1rem 0;
+      font-family: AvenirBlack;
+      svg {
+        margin: 5px;
+      }
+    }
   }
 
   .caption {
@@ -748,6 +755,155 @@
             height: 105px;
             img {
               width: 60px;
+              height: auto;
+            }
+            .st-tooltip {
+              top: 111%;
+              min-width: 120px;
+            }
+            &.active {
+              .step-text-des {
+                font-size: 9px;
+              }
+            }
+          }
+          .step-text-des {
+            font-size: 10px;
+            display: block;
+            width: 100px;
+          }
+        }
+      }
+      .final-action {
+        padding: 30px 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .mbb-wrapper {
+    .main-header {
+    }
+    .main-header_menu {
+      img {
+        width: 32px;
+      }
+    }
+    .main-header_logo {
+      height: 85px;
+    }
+  }
+  .mbb-wrapper .mbb-wrapper-container {
+    width: 100%;
+    .main-header {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      z-index: 99;
+    }
+    .mbb-main-content .step-content-wrapper {
+      padding-top: 0;
+      max-width: 100%;
+      .step-header {
+        padding-top: 80px;
+        background-size: cover;
+        height: auto;
+        padding-bottom: 40px;
+        background-position-y: 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 0px;
+        position: relative;
+        top: -25px;
+        h1 {
+          width: 255px;
+          font-size: 1.75rem;
+          line-height: 46px;
+          margin-bottom: 10px;
+        }
+        ul li {
+          font-size: 14px;
+          &::after {
+            width: 20px;
+            margin: 0 3px;
+          }
+        }
+      }
+      .step-content {
+        padding: 0px;
+        .step-dt-header,
+        .step-des {
+          font-size: 1.25rem;
+          padding: 0 15px;
+        }
+        .mbb-sub-title {
+          font-size: 1.75rem;
+        }
+        .hover-hint {
+          position: static;
+          align-items: flex-end;
+          transform: translateX(0);
+          font-size: 14px;
+          span {
+            width: 145px;
+          }
+          img {
+            width: 32px;
+            position: relative;
+            left: -50px;
+          }
+        }
+        .step-0 {
+          padding: 0 15px;
+        }
+        .step-final {
+          margin-top: 0px;
+          font-size: 14x;
+          .result-img {
+            height: 280px;
+          }
+          .result-content {
+            width: 100%;
+            padding: 0 30px;
+            .cri-result {
+              min-width: 50%;
+              margin-left: 10px;
+              img {
+                height: 48px;
+              }
+              .step-text-des {
+                width: auto;
+              }
+            }
+            .line-content .criteria {
+              min-width: 100px;
+              .__des {
+                font-size: 12px;
+              }
+              img {
+                max-height: 48px;
+              }
+            }
+            .result-selection .line-title {
+              font-size: 1rem;
+            }
+            .result-calc {
+              font-size: 14px;
+            }
+          }
+        }
+        .stepx-wp {
+          .__item {
+            padding: 0px;
+            height: 85px;
+            img {
+              width: 48px;
               height: auto;
             }
             .st-tooltip {

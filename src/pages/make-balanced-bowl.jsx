@@ -217,7 +217,7 @@ export default class MakeBalancedBowlPage extends Component {
               <button className="btn btn-primary" onClick={this.makeNewBowl}>
                 {lang.MAKE_NEW_BALANCED_BOWl}
               </button>
-              <div>
+              <div className="share-btn-gr">
                 <span>{lang.SHARE_RECIPE}</span>
                 <div>
                   <span>
