@@ -144,6 +144,8 @@
               transform: translateX(-50%);
               box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
               z-index: 99;
+              font-family: Avenir;
+              font-weight: bold;
               .__arrow {
                 position: absolute;
                 display: block;
@@ -298,6 +300,7 @@
                     color: #72553c;
                     font-weight: 600;
                     font-size: 1rem;
+                    font-family: AvenirNext;
                   }
                 }
               }
@@ -311,6 +314,7 @@
                 color: #5e3266;
                 font-size: 1.15rem;
                 padding-left: 50%;
+                font-family: AvenirNext;
                 &::before {
                   content: "";
                   width: 100px;
@@ -450,6 +454,8 @@
 .step-text-des {
   font-weight: 500;
   color: #433224;
+  font-family: AvenirNext;
+  padding-top: 7px;
 }
 
 // @media only screen and (max-width: 1024px) {
@@ -694,7 +700,7 @@
         margin-bottom: 0px;
         h1 {
           width: 255px;
-          font-size: 2rem;
+          font-size: 1.75rem;
           line-height: 46px;
         }
         ul li {
@@ -912,7 +918,7 @@
             }
             &.active {
               .step-text-des {
-                font-size: 9px;
+                // font-size: 9px;
               }
             }
           }
