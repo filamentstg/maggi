@@ -13,7 +13,7 @@
   }
   .main-header {
     width: 100%;
-    position: absolute;
+    position: absolute !important;
   }
   .mbb-main-content {
     min-height: 100vh;
@@ -510,6 +510,16 @@
 //   }
 // }
 @media only screen and (max-width: 1024px) {
+  .mbb-wrapper {
+    background-image: url("../../images/make-balanced-bowl/mb-bg.jpg") !important;
+  }
+  .mbb-wrapper .warning-modal .warning-modal-content {
+    width: 80%;
+    .btn {
+      height: 45px;
+      font-size: 1rem;
+    }
+  }
   .mbb-wrapper .mbb-wrapper-container {
     width: 100%;
     .main-header {
@@ -577,13 +587,14 @@
         .stepx-wp {
           margin-top: 4rem;
           margin-bottom: 4rem;
+          padding: 0 10px;
         }
         .step-final {
           flex-direction: column;
           align-items: center;
           .result-img {
             display: inline-flex;
-            height: 680px;
+            height: 632px;
             position: relative;
             justify-content: center;
             width: 100%;
@@ -612,6 +623,16 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .mbb-wrapper {
+    background-image: url("../../images/make-balanced-bowl/mb-bg.jpg") !important;
+  }
+  .mbb-wrapper .warning-modal .warning-modal-content {
+    width: 80%;
+    .btn {
+      height: 45px;
+      font-size: 1rem;
+    }
+  }
   .mbb-wrapper .mbb-wrapper-container {
     width: 100%;
     .main-header {
@@ -669,6 +690,16 @@
   }
 }
 @media only screen and (max-width: 480px) {
+  .mbb-wrapper {
+    background-image: url("../../images/make-balanced-bowl/mb-bg.jpg") !important;
+  }
+  .mbb-wrapper .warning-modal .warning-modal-content {
+    width: 80%;
+    .btn {
+      height: 45px;
+      font-size: 1rem;
+    }
+  }
   .mbb-wrapper {
     .main-header_logo {
       height: 100px;
@@ -756,6 +787,7 @@
           }
         }
         .stepx-wp {
+          padding: 0 10px;
           .__item {
             padding: 10px;
             height: 105px;
@@ -787,7 +819,13 @@
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
+  .mbb-wrapper {
+    background-image: url("../../images/make-balanced-bowl/mb-bg.jpg") !important;
+  }
+  .mbb-wrapper .warning-modal .warning-modal-content {
+    width: 80%;
+  }
   .mbb-wrapper {
     .main-header {
     }
