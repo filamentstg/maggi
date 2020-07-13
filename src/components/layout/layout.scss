@@ -42,7 +42,7 @@ p {
 .main-header {
   padding: 40px 0;
   padding-bottom: 50px;
-  position: relative;
+  position: relative !important;
   &_logo {
     position: absolute;
     background: url("../../images/layout/maggi_logo.png");
@@ -52,7 +52,7 @@ p {
     background-repeat: no-repeat;
     left: 0;
     top: 1.5em;
-    z-index: 10;
+    z-index: 11;
   }
   &_menu {
     display: flex;
@@ -100,4 +100,97 @@ p {
       }
     }
   }
+}
+.mbb-wrapper-container {
+  .tomato-1 {
+    display: none;
+  }
+  .pepper-1 {
+    display: none;
+  }
+  .herb-1 {
+    display: none;
+  }
+}
+.tomato-1 {
+  position: absolute;
+  transform: rotate(261deg);
+  top: -11em;
+  left: 25%;
+}
+.tomato-2 {
+  position: absolute;
+  transform: rotate(193deg);
+  top: 5em;
+  right: -6em;
+}
+.pepper-1 {
+  position: absolute;
+  top: 3em;
+  left: 45%;
+  height: 10em;
+}
+.herb-1 {
+  position: absolute;
+  transform: scaleX(-1);
+  top: -9em;
+  right: 10%;
+}
+.orange {
+  position: absolute;
+  top: 43%;
+  right: 4em;
+  height: 15em;
+}
+.herb_2 {
+  position: absolute;
+  height: 7em;
+  top: 45%;
+  right: 17em;
+  transform: scaleX(-1);
+}
+.cup {
+  position: absolute;
+  top: 41%;
+  left: -7em;
+}
+.spices {
+  position: absolute;
+  top: -21em;
+  right: -5em;
+}
+.noodles {
+  position: absolute;
+  top: -10em;
+  left: -5em;
+}
+
+.tomato_3 {
+  position: absolute;
+  transform: rotate(37deg);
+  top: 5em;
+  left: -6em;
+}
+.herb_3 {
+  position: absolute;
+  transform: rotate(264deg);
+  top: -3em;
+  right: -2em;
+}
+.pepper-2 {
+  position: absolute;
+  right: -9em;
+  bottom: 10em;
+}
+.pepper-3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.herb-4 {
+  position: absolute;
+  transform: scaleX(-1) rotate(-26deg);
+  right: -5em;
+  bottom: 3em;
+  height: 16em;
 }

@@ -11,6 +11,7 @@
     background-position: top;
     background-position-x: center;
     margin: auto;
+    overflow: hidden;
     &-container {
       width: 960px;
       margin: auto;
@@ -28,7 +29,12 @@
     }
   }
   .main-carousel {
+    .glass-of-water {
+      top: 111% !important;
+      left: 11em !important;
+    }
     &-step {
+      padding-top: 11rem !important;
       .left-arrow {
         left: 10em !important;
       }

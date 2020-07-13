@@ -31,6 +31,12 @@ import bokchoi from "../../images/make-balanced-bowl/step3/4.png";
 import cauliflower from "../../images/make-balanced-bowl/step3/3.png";
 import mushroom from "../../images/make-balanced-bowl/step3/10.png";
 
+import herb_2 from '../../images/layout/herb-2.png';
+import tomato from '../../images/layout/chilli-1.png';
+import herb_3 from '../../images/layout/herb-1.png';
+import pepper_1 from '../../images/layout/pepper-1.png';
+import pepper_2 from '../../images/layout/pepper-3.png';
+
 import Calories from "./component/calories/CaloriesComponent";
 import AOS from "aos";
 
@@ -206,6 +212,16 @@ export default class DeliciousRecipiesComponent extends React.PureComponent {
     return (
       <>
         <div data-aos="fade-up" data-aos-offset="0" className="delicious-recipes" id="delicious-recipes">
+          {
+            isMobile &&
+            <>
+              <img src={tomato} alt="tomato" className="tomato_3" />
+              <img src={herb_2} alt="herb_2" className="herb_3" />
+              <img src={pepper_1} alt="pepper_1" className="pepper-2" />
+              <img src={pepper_2} alt="herb_2" className="pepper-3" />
+              <img src={herb_3} alt="herb_2" className="herb-4" />
+            </>
+          }
           <h1>Delicious Recipes</h1>
           {
             !isMobile ?

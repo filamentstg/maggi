@@ -1,18 +1,50 @@
 import React from "react";
 import "./styles.scss";
+import { window } from "browser-monads";
 import baseBox from "../../images/why-maggi/base box.png";
 import baseBox2 from "../../images/why-maggi/base box2.png";
 import icon1 from "../../images/why-maggi/icon 1.png";
 import icon2 from "../../images/why-maggi/icon 2.png";
 import convenience from "../../images/why-maggi/convenience icon.png";
+import spices from "../../images/layout/spices.png";
+import noodles from "../../images/layout/noodles.png";
 
 export default class MaggiSectionComponent extends React.PureComponent {
-  state = {};
+  state = {
+    isMobile: false,
+  };
+
+  componentDidMount() {
+    if (window.innerWidth <= 1159) {
+      this.setState({
+        isMobile: true
+      })
+    }
+    window.addEventListener('resize', () => {
+      if (window.innerWidth <= 1159) {
+        this.setState({
+          isMobile: true
+        })
+      } else {
+        this.setState({
+          isMobile: false
+        })
+      }
+    });
+  }
 
   render() {
+    const { isMobile } = this.state;
     return (
       <>
         <div className="why-maggi" id="why-maggi">
+          {
+            isMobile &&
+            <>
+              <img src={spices} alt="spices" className="spices" />
+              <img src={noodles} alt="noodles" className="noodles" />
+            </>
+          }
           <h1>Why MAGGI®?</h1>
           <p className="why-maggi-content">
             MAGGI® 2-Minute Noodles are carbohydrate-rich foods like rice,

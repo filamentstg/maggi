@@ -14,6 +14,12 @@
       background-repeat: no-repeat;
       background-position: center;
     }
+    .stroke-mobile {
+      position: absolute;
+      transform: rotate(61deg);
+      left: -2em;
+      top: 2em;
+    }
   }
   .carousel {
     height: 17rem;

@@ -4,7 +4,9 @@ import { Link } from "gatsby";
 import { window } from "browser-monads";
 import menuIcon from '../../images/layout/iconfinder_menu-alt_134216.png';
 import closeIcon from '../../images/layout/close.png';
-// import tomato from '../../images/layout/tomato.jpg';
+import tomato from '../../images/layout/chilli-1.png';
+import herb from '../../images/layout/herb-1.png';
+import pepper from '../../images/layout/pepper-3.png';
 const header_data = [
 	{
 		title: "Make Your Balanced Bowl",
@@ -64,6 +66,14 @@ class Header extends React.PureComponent {
           </Link>
           <div className="main-header_menu" id="main-header">
             {
+              isMobile &&
+              <>
+                <img src={tomato} alt="tomatto-1" className="tomato-1"/>
+                <img src={herb} alt="herb-1" className="herb-1"/>
+                <img src={pepper} alt="pepper-1" className="pepper-1"/>
+              </>
+            }
+            {
               !isMobile ?
                 <>
                   {menuList.map((item, index) => (
@@ -80,7 +90,7 @@ class Header extends React.PureComponent {
                     </div>
                   </div>
                 </> :
-                <div style={{ height: '60px'}}>
+                <div style={{ height: '60px', zIndex: '10'}}>
                   {!isShowMenu && <img style={{ cursor: 'pointer' }} src={menuIcon} alt="" width="50" height="50" onClick={() => this.setState({ isShowMenu: true })} /> }
                   <div className="mobile-menu" style={isShowMenu ? {height: '100%'} : {height: '0'}}>
                   {isShowMenu && <img className="mobile-menu-close-btn" src={closeIcon} alt="" width="50" height="50" onClick={() => this.setState({ isShowMenu: false })} /> }

@@ -1,8 +1,14 @@
 import React from "react";
 import { Link } from "gatsby";
+import { window } from "browser-monads";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import { window } from "browser-monads";
+import tomato from '../../images/layout/chilli-1.png';
+import orange from '../../images/layout/orange.png';
+import cup from '../../images/layout/Cup.png';
+import herb_2 from '../../images/layout/herb-2.png';
+import stroke from '../../images/layout/stroke.png';
+
 import "./styles.scss";
 import "./step.scss";
 
@@ -103,6 +109,7 @@ const Step_3 = () => {
 export default class CarouselSection extends React.PureComponent {
   state = {
     currentSlide: 0,
+    isMobile: false,
   };
   next = () => {
     const { currentSlide } = this.state;
@@ -136,11 +143,30 @@ export default class CarouselSection extends React.PureComponent {
     }
   };
 
+  componentDidMount() {
+    if (window.innerWidth <= 1159) {
+      this.setState({
+        isMobile: true
+      })
+    }
+    window.addEventListener('resize', () => {
+      if (window.innerWidth <= 1159) {
+        this.setState({
+          isMobile: true
+        })
+      } else {
+        this.setState({
+          isMobile: false
+        })
+      }
+    });
+  }
+
   render() {
     let isDisplayProtein = false;
     let isDisplayCarbon = false;
     let isDisplayVege = false;
-    const { currentSlide } = this.state;
+    const { currentSlide, isMobile } = this.state;
     if (currentSlide === 0) {
       isDisplayProtein = true;
       isDisplayCarbon = true;
@@ -154,12 +180,28 @@ export default class CarouselSection extends React.PureComponent {
     }
     return (
       <div className="main-carousel">
+        {
+          isMobile &&
+          <>
+            <img src={tomato} alt="tomatto-2" className="tomato-2" />
+            <img src={orange} alt="orange" className="orange" />
+            <img src={herb_2} alt="herb_2" className="herb_2" />
+            <img src={cup} alt="cup" className="cup" />
+          </>
+        }
         <div className="columns is-gapless custom-mobile">
           <div className="column is-narrow content">
-            <div className="glass-of-water">
-              <span>and a glass of water</span>
-              <div className="stroke"></div>
-            </div>
+            {
+              isMobile ?
+              <div className="glass-of-water">
+                <img src={stroke} alt="stroke" className="stroke-mobile" />
+                <span>and a glass of water</span>
+              </div> :
+              <div className="glass-of-water">
+                <span>and a glass of water</span>
+                <div className="stroke"></div>
+              </div>
+            }
             <div className="main-carousel-balance-bowl columns is-gapless is-mobile">
               <div className="column is-6">
                 <div style={{ height: "50%" }}>

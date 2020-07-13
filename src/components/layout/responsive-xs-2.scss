@@ -17,6 +17,7 @@
     background-position: top;
     background-position-x: center;
     margin: auto;
+    overflow: hidden;
     &-container {
       width: 380px;
       margin: auto;
@@ -39,6 +40,11 @@
     }
   }
   .main-carousel {
+    .glass-of-water {
+      top: 108% !important;
+      left: 21% !important;
+      font-size: .7em !important;
+    }
     &-balance-bowl {
       height: 18em !important;
       &-full {
@@ -47,27 +53,28 @@
       }
       &-carbohydrates {
         span {
-          font-size: .73em !important;
-          bottom: 1.5em !important;
-          left: 3.5em !important;
+          font-size: .65em !important;
+          bottom: 2em !important;
+          left: 4.5em !important;
         }
       }
       &-protein {
         span {
-          font-size: .73em !important;
-          top: 3.4em !important;
-          left: 4.5em !important;
+          font-size: .65em !important;
+          top: 4em !important;
+          left: 5.5em !important;
         }
       }
       &-vegetable {
         span {
-          font-size: .73em !important;
-          top: 5em !important;
-          right: 1.5em !important;
+          font-size: .65em !important;
+          top: 5.5em !important;
+          right: 2.5em !important;
         }
       }
     }
     &-step {
+      padding-top: 6rem !important;
       .left-arrow {
         left: 0em !important;
       }
@@ -92,7 +99,7 @@
       font-size: 1em;
     }
     .description {
-      padding: 0 2em !important;
+      padding: 0 1.5em !important;
     }
   }
   .steps {
@@ -263,4 +270,74 @@
       }
     }
   }
+
+.tomato-1 {
+  top: -6em !important;
+  left: 25% !important;
+  height: 12em !important;
+}
+.tomato-2 {
+  top: 3em !important;
+  right: -5em !important;
+  height: 14em !important;
+}
+.pepper-1 {
+  top: 2em !important;
+  height: 4em !important;
+}
+.herb-1 {
+  top: -6em !important;
+  right: -6% !important;
+  height: 12em !important;
+}
+.orange {
+  top: 33% !important;
+  right: 0em !important;
+  height: 8em !important;
+}
+.herb_2 {
+  height: 4em !important;
+  top: 34% !important;
+  right: 7em !important;
+}
+.cup {
+  top: 18% !important;
+  left: -12em !important;
+}
+.spices {
+  right: -7em !important;
+  height: 13em !important;
+  top: -9em !important;
+}
+.noodles {
+  top: -4em !important;
+  left: -2em !important;
+  height: 19em !important;
+}
+
+.tomato_3 {
+  top: -1em !important;
+  left: -11em !important;
+}
+.herb_3 {
+  top: 0em !important;
+  right: -4em !important;
+  height: 9em !important;
+}
+.pepper-2 {
+  position: absolute;
+  right: -9em;
+  bottom: 10em;
+}
+.pepper-3 {
+  height: 9em;
+  left: -3em !important;
+}
+.herb-4 {
+  position: absolute;
+  transform: scaleX(-1) rotate(-26deg);
+  right: -9em !important;
+  bottom: -2em !important;
+  height: 16em;
+}
 }

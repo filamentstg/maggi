@@ -11,6 +11,7 @@
     background-position: top;
     background-position-x: center;
     margin: auto;
+    overflow: hidden;
     &-container {
       width: 500px;
       margin: auto;
@@ -26,13 +27,17 @@
     &_logo {
       height: 10.5em;
       width: 10.5em;
-      left: 1em;
+      left: 0em !important;
     }
     &_menu {
-      padding: 0 3em;
+      padding: 0 0em !important;
     }
   }
   .main-carousel {
+    .glass-of-water {
+      top: 109% !important;
+      left: 22% !important;
+    }
     &-balance-bowl {
       height: 25em !important;
       &-full {
@@ -61,6 +66,7 @@
       }
     }
     &-step {
+      padding-top: 10rem !important;
       .left-arrow {
         left: 0em !important;
       }
@@ -225,4 +231,75 @@
       }
     }
   }
+
+.tomato-1 {
+  top: -8em !important;
+  left: 25% !important;
+  height: 18em !important;
+}
+.tomato-2 {
+  position: absolute;
+  transform: rotate(193deg);
+  top: 5em;
+  right: -10em;
+}
+.pepper-1 {
+  top: 6em !important;
+  height: 6em !important;
+}
+.herb-1 {
+  top: -6em !important;
+  right: -6% !important;
+  height: 16em !important;
+}
+.orange {
+  top: 38% !important;
+  right: 2em !important;
+  height: 11em !important;
+}
+.herb_2 {
+  height: 6em !important;
+  top: 39% !important;
+  right: 11em !important;
+
+}
+.cup {
+  top: 25% !important;
+  left: -10em !important;
+}
+.spices {
+  right: -13em !important;
+}
+.noodles {
+  top: -10em !important;
+  left: -6em !important;
+  height: 42em !important;
+}
+
+.tomato_3 {
+  top: -1em !important;
+  left: -11em !important;
+}
+.herb_3 {
+  top: 0em !important;
+  right: -4em !important;
+  height: 9em !important;
+}
+.pepper-2 {
+  position: absolute;
+  right: -9em;
+  bottom: 10em;
+}
+.pepper-3 {
+  position: absolute;
+  bottom: 0;
+  left: -5em !important;
+}
+.herb-4 {
+  position: absolute;
+  transform: scaleX(-1) rotate(-26deg);
+  right: -9em !important;
+  bottom: 3em;
+  height: 16em;
+}
 }
