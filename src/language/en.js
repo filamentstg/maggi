@@ -14,7 +14,7 @@ export const MAKE_BALANCEC_BOWL_LANG = {
 	NEXT: 'Next',
 	BACK: 'Back',
 	INTRO_HINT: '*When creating your own Balanced Bowl, you may use more than 2 protein and vegetables to occupy the suggested approximate proportions of Suku-Suku-Separuh',
-	STEP1_TITLE: 'Pick your favourite MAGGI® Noodle as your carbohydrate-of-choice',
+	STEP1_TITLE: 'Click on each ingredient to learn more about its nutritional value', //'Pick your favourite MAGGI® Noodle as your carbohydrate-of-choice',
 	STEP1_OP1_TITLE: 'MAGGI® 2-Minute <br> Curry Noodles',
 	STEP1_OP2_TITLE: 'MAGGI® 2-Minute <br> Chicken Noodles',
 	STEP1_OP3_TITLE: 'MAGGI® 2-Minute <br> Tom Yam Noodles',

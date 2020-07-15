@@ -154,11 +154,12 @@
                 border-color: transparent;
                 border-style: solid;
                 top: -12px;
-                left: 48%;
+                left: 50%;
                 margin-right: 3px;
                 border-top-width: 0;
                 border-bottom-color: #fff;
                 border-width: 6px;
+                transform: translateX(-50%);
                 filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.03));
                 &::after {
                   content: " ";
@@ -419,6 +420,8 @@
       font-family: AvenirBlack;
       svg {
         margin: 5px;
+        height: 32px;
+        width: 32px;
       }
     }
   }
@@ -551,6 +554,11 @@
         margin: 0 auto;
         .caption {
           white-space: break-spaces;
+        }
+        .__item:hover {
+          .st-tooltip {
+            display: none;
+          }
         }
         .step2-wrapper,
         .step3-wrapper {
@@ -746,8 +754,18 @@
         padding: 0px;
         .step-dt-header,
         .step-des {
-          font-size: 1.25rem;
+          font-size: 1.15rem;
           padding: 0 15px;
+        }
+        &.__2 {
+          .step-dt-header {
+            padding: 0 95px;
+          }
+        }
+        &.__3 {
+          .step-dt-header {
+            padding: 0 80px;
+          }
         }
         .mbb-sub-title {
           font-size: 1.75rem;
@@ -757,6 +775,7 @@
           align-items: flex-end;
           transform: translateX(0);
           font-size: 14px;
+          display: none !important;
           span {
             width: 145px;
           }
@@ -783,6 +802,11 @@
             }
             .line-content .criteria img {
               max-height: 70px;
+            }
+            .result-calc {
+              .row-title {
+                font-size: 12px;
+              }
             }
           }
         }
@@ -883,7 +907,7 @@
         padding: 0px;
         .step-dt-header,
         .step-des {
-          font-size: 1.25rem;
+          font-size: 1.15rem;
           padding: 0 15px;
         }
         .mbb-sub-title {
