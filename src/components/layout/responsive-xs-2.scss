@@ -1,7 +1,7 @@
 @media only screen and (min-width: 400px) and (max-width: 539px) {
   h1 {
-    font-size: 2rem;
-    line-height: 3.5rem;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
     margin-bottom: 1.5rem;
   }
   p {
@@ -24,19 +24,26 @@
     }
   }
   .mobile-menu {
+     &-close-btn {
+      top: 1em !important;
+      right: 1em !important;
+    }
     &-item {
       font-size: 22px !important;
     }
   }
   .main-header {
-    padding: 45px 0 !important;
+    padding: 25px 0 !important;
     &_logo {
-      height: 6.5em;
-      width: 6.5em;
+      height: 4.5em;
+      width: 4.5em;
       left: 1em;
+      left: 0em !important;
+      top: 1em !important;
     }
     &_menu {
       padding: 0 1em;
+      padding-right: 0em;
     }
   }
   .main-carousel {
@@ -44,37 +51,40 @@
       top: 108% !important;
       left: 21% !important;
       font-size: .7em !important;
+      .stroke-mobile {
+        height: 3em !important;
+      }
     }
     &-balance-bowl {
-      height: 18em !important;
+      height: 19em !important;
       &-full {
-        height: 17.5em !important;
+        height: 18.5em !important;
         width: 25em !important;
       }
       &-carbohydrates {
         span {
           font-size: .65em !important;
           bottom: 2em !important;
-          left: 4.5em !important;
+          left: 4em !important;
         }
       }
       &-protein {
         span {
           font-size: .65em !important;
           top: 4em !important;
-          left: 5.5em !important;
+          left: 5em !important;
         }
       }
       &-vegetable {
         span {
           font-size: .65em !important;
-          top: 5.5em !important;
-          right: 2.5em !important;
+          top: 6em !important;
+          right: 1.8em !important;
         }
       }
     }
     &-step {
-      padding-top: 6rem !important;
+      padding-top: 7rem !important;
       .left-arrow {
         left: 0em !important;
       }
@@ -89,7 +99,7 @@
       justify-content: center !important;
     }
     .carousel {
-      height: 18rem !important;
+      height: 15.5rem !important;
       &-root {
         width: 24em !important;
         margin: auto;
@@ -99,7 +109,7 @@
       font-size: 1em;
     }
     .description {
-      padding: 0 1.5em !important;
+      padding: 0 4em !important;
     }
   }
   .steps {
@@ -273,7 +283,7 @@
 
 .tomato-1 {
   top: -6em !important;
-  left: 25% !important;
+  left: 20% !important;
   height: 12em !important;
 }
 .tomato-2 {
@@ -284,6 +294,7 @@
 .pepper-1 {
   top: 2em !important;
   height: 4em !important;
+  left: 40% !important;
 }
 .herb-1 {
   top: -6em !important;
@@ -301,8 +312,9 @@
   right: 7em !important;
 }
 .cup {
-  top: 18% !important;
-  left: -12em !important;
+  top: 35% !important;
+  left: -3em !important;
+  height: 10em !important;
 }
 .spices {
   right: -7em !important;

@@ -52,7 +52,7 @@ export default class ScrollToTop extends Component {
 			<div className="scroll-top-btn">
 				{
 					this.state.isShowScrollBtn ? (
-            <Link to="/#main-header">
+            <Link to="/#">
               <button className="scroll-top-btn-main" onClick={this.scrollToTop}>
                 <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <line y1="-1" x2="16.1686" y2="-1" transform="matrix(0.732904 -0.680332 0.766549 0.642186 2 13)" stroke="white" stroke-width="2" />

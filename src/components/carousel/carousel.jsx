@@ -84,7 +84,7 @@ const Step_3 = () => {
       <h1>Step 3</h1>
       <p style={{ padding: "0 4em" }}>Pick vegetables to add to your noodles</p>
       <div className="columns steps mobile-step-3">
-        <span className="steps-equal">=</span>
+        <span style={{ top: '70%' }} className="steps-equal">=</span>
         <div
           className="column is-6 step"
         >
@@ -250,7 +250,7 @@ export default class CarouselSection extends React.PureComponent {
                 <Carousel
                   autoPlay={false}
                   infiniteLoop
-
+                  interval={4000}
                   statusFormatter={() => ""}
                   showIndicators={false}
                   showArrows={false}

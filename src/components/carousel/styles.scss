@@ -141,6 +141,7 @@
     top: 50%;
     left: -1.5em;
     transform: translateY(-50%);
+    z-index: 1;
   }
 
   .right-arrow {
@@ -155,6 +156,7 @@
     top: 50%;
     right: -1em;
     transform: translateY(-50%);
+    z-index: 1;
 }
   .indicator-wrapper {
     display: flex;

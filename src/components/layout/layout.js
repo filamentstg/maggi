@@ -26,8 +26,9 @@ import "./responsive-xs-3.scss"
 const Layout = ({ children }) => {
   if (typeof window !== "undefined") {
     require("smooth-scroll")('a[href*="#"]', {
-      speed: 1000,
-      speedAsDuration: true,
+      speed: 300,
+      // speedAsDuration: true,
+      topOnEmptyHash: true,
     });
   }
 	const data = useStaticQuery(graphql`

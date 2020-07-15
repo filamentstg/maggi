@@ -1,6 +1,6 @@
 @media only screen and (min-width: 320px) and (max-width: 399px) {
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 2.5rem;
     margin-bottom: 1rem;
   }
@@ -20,28 +20,42 @@
     background-position: top;
     background-position-x: center;
     margin: auto;
+    overflow: hidden;
     &-container {
       width: 310px;
       margin: auto;
     }
   }
   .mobile-menu {
+    &-close-btn {
+      top: 1em !important;
+      right: 1em !important;
+    }
     &-item {
       font-size: 18px !important;
     }
   }
   .main-header {
-    padding: 35px 0 !important;
+    padding: 10px 0 !important;
     &_logo {
-      height: 6.5em;
-      width: 6.5em;
-      left: 1em;
+      height: 3.5em;
+      width: 3.5em;
+      left: 1em !important;
+      top: 1em !important;
     }
     &_menu {
       padding: 0 1em;
     }
   }
   .main-carousel {
+    .glass-of-water {
+      top: 108% !important;
+      left: 17% !important;
+      font-size: .5em !important;
+      .stroke-mobile {
+        height: 3em !important;
+      }
+    }
     &-balance-bowl {
       height: 14em !important;
       &-full {
@@ -71,7 +85,7 @@
       }
     }
     &-step {
-      padding-top: 3rem !important;
+      padding-top: 4rem !important;
       .left-arrow {
         left: 0em !important;
       }
@@ -268,4 +282,76 @@
       }
     }
   }
+
+.tomato-1 {
+  top: -5em !important;
+  left: 25% !important;
+  height: 12em !important;
+}
+.tomato-2 {
+  top: 3em !important;
+  right: -3.5em !important;
+  height: 10em !important;
+  left: unset !important;
+}
+.pepper-1 {
+  top: 2em !important;
+  height: 4em !important;
+}
+.herb-1 {
+  top: -6em !important;
+  right: -6% !important;
+  height: 12em !important;
+}
+.orange {
+  top: 28% !important;
+  right: 0em !important;
+  height: 6em !important;
+}
+.herb_2 {
+  height: 3em !important;
+  top: 34% !important;
+  right: 6em !important;
+}
+.cup {
+  top: 31% !important;
+  left: -3em !important;
+  height: 9em !important;
+}
+.spices {
+  right: -6em !important;
+  height: 13em !important;
+  top: -9em !important;
+}
+.noodles {
+  top: -4em !important;
+  left: -2em !important;
+  height: 19em !important;
+}
+
+.tomato_3 {
+  top: -1em !important;
+  left: -11em !important;
+}
+.herb_3 {
+  top: 0em !important;
+  right: -4em !important;
+  height: 9em !important;
+}
+.pepper-2 {
+  position: absolute;
+  right: -9em;
+  bottom: 10em;
+}
+.pepper-3 {
+  height: 9em;
+  left: -3em !important;
+}
+.herb-4 {
+  position: absolute;
+  transform: scaleX(-1) rotate(-26deg);
+  right: -9em !important;
+  bottom: -2em !important;
+  height: 16em;
+}
 }
