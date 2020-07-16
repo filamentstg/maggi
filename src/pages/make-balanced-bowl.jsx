@@ -53,19 +53,30 @@ export default class MakeBalancedBowlPage extends Component {
     waringModalVisible: false,
     warningModalMes: "",
   };
-  onSelectStep1 = (index) => {
+  setTooltip = (event) => {
+    const tt = event.currentTarget.getElementsByClassName("st-tooltip")[0];
+    tt.classList.add("display-block");
+
+    setTimeout(() => {
+      tt.classList.remove("display-block");
+    }, 1000);
+  };
+  onSelectStep1 = (index, event) => {
     // this.updateActiveStep(1, index);
     const { activeStep } = this.state;
     activeStep.selectedItem[1] = [index];
     this.setState({
       activeStep: activeStep,
     });
+    this.setTooltip(event);
   };
-  onSelectStep2 = (index) => {
+  onSelectStep2 = (index, event) => {
     this.updateActiveStep(2, index);
+    this.setTooltip(event);
   };
-  onSelectStep3 = (index) => {
+  onSelectStep3 = (index, event) => {
     this.updateActiveStep(3, index);
+    this.setTooltip(event);
   };
   updateActiveStep = (step, stepIndex) => {
     const { activeStep } = this.state;

@@ -610,13 +610,14 @@
               left: 50%;
               top: 0px;
               transform: translateX(-50%);
-              //   height: 745px;
+              height: 100%;
               width: auto;
             }
           }
           .result-content {
             transform: none;
             width: 600px;
+            margin-top: -40px;
             .result-selection .line-title {
               padding-left: 0px;
             }
@@ -843,7 +844,7 @@
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 380px) {
   .mbb-wrapper {
     background-image: url("../../images/make-balanced-bowl/mb-bg.jpg") !important;
   }
@@ -996,4 +997,8 @@
       }
     }
   }
+}
+.display-block {
+  display: block !important;
+  z-index: 99;
 }

@@ -24,7 +24,7 @@ const MbbStepTwo = ({ selection, selectHandle, lang }) => {
 		<div className="stepx-wp step2-wrapper" style={wrapStyle}>
 			{
 				[1, 2, 3, 4, 5, 6].map(index => (
-					<div key={index} className={`__item ${selection.indexOf(index) > -1 ? 'active' : ''}`} onClick={() => selectHandle(index)} >
+					<div key={index} className={`__item ${selection.indexOf(index) > -1 ? 'active' : ''}`} onClick={(e) => selectHandle(index, e)} >
 						<img src={options[index]} alt=""></img>
 						<span className="step-text-des" dangerouslySetInnerHTML={{ __html: lang[`STEP2_OP${index}_TITLE`] }}>
 

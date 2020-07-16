@@ -32,7 +32,7 @@ const MbbStepThree = ({ selection, selectHandle, lang }) => {
 		<div className="stepx-wp step3-wrapper" style={wrapStyle}>
 			{
 				[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(index => (
-					<div key={index} className={`__item ${selection.indexOf(index) > -1 ? 'active' : ''}`} onClick={() => selectHandle(index)} >
+					<div key={index} className={`__item ${selection.indexOf(index) > -1 ? 'active' : ''}`} onClick={(e) => selectHandle(index, e)} >
 						<img src={options[index]} alt=""></img>
 						<span className="step-text-des" dangerouslySetInnerHTML={{ __html: lang[`STEP3_OP${index}_TITLE`] }}>
 
