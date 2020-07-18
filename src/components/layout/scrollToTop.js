@@ -35,9 +35,9 @@ export default class ScrollToTop extends Component {
 		})
 	}
 	scrollToTop = () => {
-		window.scrollTo({
-			'behavior': 'smooth',
-			'top': 0
+		window.scroll({
+			behavior: 'smooth',
+			top: 0
 		})
 	}
 	componentDidMount() {
@@ -52,15 +52,13 @@ export default class ScrollToTop extends Component {
 			<div className="scroll-top-btn">
 				{
 					this.state.isShowScrollBtn ? (
-            <Link to="/#">
-              <button className="scroll-top-btn-main" onClick={this.scrollToTop}>
-                <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <line y1="-1" x2="16.1686" y2="-1" transform="matrix(0.732904 -0.680332 0.766549 0.642186 2 13)" stroke="white" stroke-width="2" />
-                  <line y1="-1" x2="15.8326" y2="-1" transform="matrix(0.759259 0.650789 -0.740604 0.671942 11.979 3)" stroke="white" stroke-width="2" />
-                </svg>
+            <button className="scroll-top-btn-main" onClick={this.scrollToTop}>
+              <svg width="26" height="14" viewBox="0 0 26 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="-1" x2="16.1686" y2="-1" transform="matrix(0.732904 -0.680332 0.766549 0.642186 2 13)" stroke="white" strokeWidth="2" />
+                <line y1="-1" x2="15.8326" y2="-1" transform="matrix(0.759259 0.650789 -0.740604 0.671942 11.979 3)" stroke="white" strokeWidth="2" />
+              </svg>
 
-              </button>
-            </Link>
+            </button>
 					) : null
 				}
 

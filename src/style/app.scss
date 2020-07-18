@@ -30,9 +30,18 @@ $title-size: 2.5rem;
 $subtitle-size: 2rem;
 $caption-size: 0.75rem;
 $text-size: 1rem;
+* {
+  -webkit-overflow-scrolling: touch;
+}
+html {
 
+}
 body {
   font-family: AvenirNextRegurlar;
+   scroll-behavior: smooth;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
 }
 .caption {
   font-size: $caption-size;

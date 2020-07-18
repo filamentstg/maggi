@@ -37,7 +37,7 @@ export default class MaggiSectionComponent extends React.PureComponent {
     const { isMobile } = this.state;
     return (
       <>
-        <div className="why-maggi" id="why-maggi">
+        <div className="why-maggi" id="">
           {
             isMobile &&
             <>

@@ -1,6 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 import { Link } from "gatsby";
+import { navigateTo } from 'gatsby-link';
 import { window } from "browser-monads";
 import menuIcon from '../../images/layout/iconfinder_menu-alt_134216.png';
 import closeIcon from '../../images/layout/close.png';
@@ -51,6 +52,24 @@ class Header extends React.PureComponent {
     });
   }
 
+  changeRoute = (action) => {
+    if (action === 0) {
+      navigateTo('/make-balanced-bowl');
+      return;
+    }
+    const { scroll, hideMybb } = this.props;
+    if (hideMybb) {
+      if(action === 1) {
+        navigateTo('/#why-maggi');
+      } else {
+        navigateTo('/#delicious-recipes');
+      }
+      return;
+    }
+
+    scroll(action);
+  }
+
   render() {
     const { isMobile, lang, isShowMenu } = this.state;
     // const { hideMybb } = this.props;
@@ -78,7 +97,7 @@ class Header extends React.PureComponent {
                 <>
                   {menuList.map((item, index) => (
                     <div className="main-header_menu-item" key={index}>
-                      <Link to={item.link}><span>{item.title}</span></Link>
+                      <span onClick={() => this.changeRoute(item.action)}>{item.title}</span>
                     </div>
                   ))}
                   <div className="main-header_menu-item language">
@@ -109,7 +128,7 @@ class Header extends React.PureComponent {
                     <div className="mobile-menu-container" style={isShowMenu ? { display: 'block' } : { display: 'none' }}>
                       {menuList.map((item, index) => (
                         <div className="mobile-menu-item" key={index} onClick={() => this.setState({ isShowMenu: false })}>
-                          <Link to={item.link}><span>{item.title}</span></Link>
+                          <span onClick={() => this.changeRoute(item.action)}>{item.title}</span>
                         </div>
                       ))}
                     </div>

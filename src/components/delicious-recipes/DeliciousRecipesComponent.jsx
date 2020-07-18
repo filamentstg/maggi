@@ -211,7 +211,7 @@ export default class DeliciousRecipiesComponent extends React.PureComponent {
     const hideArrowBtn = window.innerWidth < 400 ? true : false;
     return (
       <>
-        <div data-aos="fade-up" data-aos-offset="0" className="delicious-recipes" id="delicious-recipes">
+        <div data-aos="fade-up" data-aos-offset="0" className="delicious-recipes" id="">
           {
             isMobile &&
             <>

@@ -23,13 +23,9 @@ import "./responsive-xs-3.scss"
 // import "./responsive-md-2.scss"
 // import "./responsive-md-3.scss"
 
-const Layout = ({ children }) => {
-  if (typeof window !== "undefined") {
-    require("smooth-scroll")('a[href*="#"]', {
-      speed: 300,
-      // speedAsDuration: true,
-      topOnEmptyHash: true,
-    });
+const Layout = ({ children, scrollEvent }) => {
+  const executeScroll = (action) => {
+    scrollEvent(action);
   }
 	const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -43,9 +39,9 @@ const Layout = ({ children }) => {
 	return (
 		<div className="landing-page" style={{height: '100%'}}>
       <div className="landing-page-container">
-				<Header siteTitle={data.site.siteMetadata.title} />
+        <Header scroll={executeScroll} siteTitle={data.site.siteMetadata.title} />
 				<div className="landing-page-container_main-content">
-					<main>{children}</main>
+          <main>{children}</main>
 				</div>
 			</div>
 		</div>
