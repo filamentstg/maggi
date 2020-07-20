@@ -556,6 +556,7 @@
           white-space: break-spaces;
         }
         .__item:hover {
+          transform: none;
           .st-tooltip {
             display: none;
           }
@@ -673,6 +674,7 @@
         left: 0;
         .caption {
           white-space: break-spaces;
+          font-size: 10px;
         }
         .step2-wrapper,
         .step3-wrapper {
@@ -758,6 +760,11 @@
           font-size: 1.15rem;
           padding: 0 15px;
         }
+        .step-0 {
+          .step-des {
+            font-size: 14px;
+          }
+        }
         &.__2 {
           .step-dt-header {
             padding: 0 95px;
@@ -786,33 +793,53 @@
             left: -50px;
           }
         }
+        .stepx-wp {
+          margin-top: 3rem;
+          margin-bottom: 3rem;
+        }
         .step-0 {
           padding: 0 15px;
         }
         .step-final {
-          margin-top: 0px;
+          margin-top: -20px;
           font-size: 14x;
+        }
+        .step-final {
           .result-img {
-            height: 380px;
+            height: 280px;
           }
           .result-content {
             width: 100%;
             padding: 0 30px;
-            .cri-result img {
-              height: 70px;
+            .cri-result {
+              min-width: 50%;
+              margin-left: 10px;
+              img {
+                height: 48px;
+              }
+              .step-text-des {
+                width: auto;
+              }
             }
-            .line-content .criteria img {
-              max-height: 70px;
-            }
-            .result-calc {
-              .row-title {
+            .line-content .criteria {
+              min-width: 100px;
+              .__des {
                 font-size: 12px;
               }
+              img {
+                max-height: 48px;
+              }
+            }
+            .result-selection .line-title {
+              font-size: 1rem;
+            }
+            .result-calc {
+              font-size: 14px;
             }
           }
         }
         .stepx-wp {
-          padding: 0 10px;
+          padding: 0 30px;
           .__item {
             padding: 10px;
             height: 105px;
@@ -826,7 +853,7 @@
             }
             &.active {
               .step-text-des {
-                font-size: 9px;
+                // font-size: 9px;
               }
             }
           }
@@ -911,6 +938,16 @@
           font-size: 1.15rem;
           padding: 0 15px;
         }
+        &.__2 {
+          .step-dt-header {
+            padding: 0 70px;
+          }
+        }
+        &.__3 {
+          .step-dt-header {
+            padding: 0 60px;
+          }
+        }
         .mbb-sub-title {
           font-size: 1.75rem;
         }
@@ -968,9 +1005,15 @@
           }
         }
         .stepx-wp {
+          &.step1-wrapper {
+            padding: 0 10px;
+            .__item {
+              height: 100px;
+            }
+          }
           .__item {
             padding: 0px;
-            height: 85px;
+            height: 80px;
             img {
               width: 48px;
               height: auto;
