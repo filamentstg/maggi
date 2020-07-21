@@ -23,10 +23,10 @@
     }
   }
   .main-header {
-    padding: 80px 0 !important;
+    padding: 50px 0 !important;
     &_logo {
-      height: 10.5em;
-      width: 10.5em;
+      height: 7.5em;
+      width: 7.5em;
       left: 0em !important;
     }
     &_menu {
@@ -233,15 +233,16 @@
   }
 
 .tomato-1 {
-  top: -8em !important;
+  top: -6em !important;
   left: 25% !important;
-  height: 18em !important;
+  height: 14em !important;
 }
 .tomato-2 {
   position: absolute;
   transform: rotate(193deg);
-  top: 5em;
-  right: -10em;
+  top: 6em;
+  right: -5em;
+  height: 14em;
 }
 .pepper-1 {
   top: 6em !important;
@@ -253,19 +254,19 @@
   height: 16em !important;
 }
 .orange {
-  top: 38% !important;
-  right: 2em !important;
-  height: 11em !important;
+  top: 31% !important;
+  right: -2em !important;
+  height: 19em !important;
 }
 .herb_2 {
-  height: 6em !important;
-  top: 39% !important;
-  right: 11em !important;
-
+  height: 5em !important;
+  top: 38% !important;
+  right: 10em !important;
 }
 .cup {
-  top: 25% !important;
-  left: -10em !important;
+  top: 34% !important;
+  left: -6em !important;
+  height: 17em !important;
 }
 .spices {
   right: -13em !important;
