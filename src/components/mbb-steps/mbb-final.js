@@ -88,15 +88,16 @@ const MbbFinal = ({ lang, selection }) => {
 			<span className="result-img">
 				<img src={margiBowl} alt="Maggi" />
 				{
-					proBowls.map(item => (
-						<img src={require(`../../images/make-balanced-bowl/final/bow-ing/step2/${item}.png`)} alt={lang[`STEP2_OP${item}_TITLE`]} />
-					))
-				}
-				{
-					vegBowls.map(item => (
+					vegBowls.reverse().map(item => (
 						<img src={require(`../../images/make-balanced-bowl/final/bow-ing/step3/${item}.png`)} alt={lang[`STEP3_OP${item}_TITLE`]} />
 					))
 				}
+				{
+					proBowls.reverse().map(item => (
+						<img src={require(`../../images/make-balanced-bowl/final/bow-ing/step2/${item}.png`)} alt={lang[`STEP2_OP${item}_TITLE`]} />
+					))
+				}
+
 			</span>
 			<div className="result-content">
 				<div className="result-selection">
