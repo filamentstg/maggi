@@ -1,14 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
 
-// import imgBowl from "../../images/make-balanced-bowl/final/bowl-op.png";
-// import imgBowl from "../../images/make-balanced-bowl/final/bowl-op.png";
-// import imgBowl from "../../images/make-balanced-bowl/final/bowl-op.png";
-// import imgBowl from "../../images/make-balanced-bowl/final/bowl-op.png";
-
-// import imgOp1 from "../../images/make-balanced-bowl/step1/1.png";
-// import imgOp2 from "../../images/make-balanced-bowl/step1/2.png";
-// import imgOp3 from "../../images/make-balanced-bowl/step1/3.png";
 const INGREDIENT_CAL = {
 	1: {
 		1: 352,
@@ -44,15 +36,7 @@ const NEEDED_CAL = {
 }
 
 
-const MbbFinal = ({ lang, selection }) => {
-	// const wrapStyle = {
-	// 	display: 'flex',
-	// }
-	// const options = {
-	// 	1: imgOp1,
-	// 	2: imgOp2,
-	// 	3: imgOp3
-	// }
+const MbbResultPic = ({ lang, selection }) => {
 	const totalCalMaggi = selection[1].reduce((sum, item) => {
 		return sum + INGREDIENT_CAL[1][item]
 	}, 0)
@@ -84,7 +68,7 @@ const MbbFinal = ({ lang, selection }) => {
 	}
 
 	return (
-		<div className="stepx-wp step-final">
+		<div className="mbbPicWrap">
 			<span className="result-img">
 				<img src={margiBowl} alt="Maggi" />
 				{
@@ -191,19 +175,19 @@ const MbbFinal = ({ lang, selection }) => {
 						<div className="col2 percent-detail">
 							<div>
 								<span className="per-label">{lang.CHILDREN}</span>
-								<span className="cal-number">{(totalCal / NEEDED_CAL.CHIDLREN * 100).toFixed(2)}%</span>
+								<span className="cal-number">{(totalCal / NEEDED_CAL.CHIDLREN * 100).toFixed(2)} <span> &nbsp; % </span></span>
 							</div>
 							<div>
 								<span className="per-label">{lang.SENIORS}</span>
-								<span className="cal-number">{(totalCal / NEEDED_CAL.SENIOR * 100).toFixed(2)}%</span>
+								<span className="cal-number">{(totalCal / NEEDED_CAL.SENIOR * 100).toFixed(2)} <span> &nbsp; % </span></span>
 							</div>
 							<div>
 								<span className="per-label">{lang.FEMALE}</span>
-								<span className="cal-number">{(totalCal / NEEDED_CAL.FEMALE * 100).toFixed(2)}%</span>
+								<span className="cal-number">{(totalCal / NEEDED_CAL.FEMALE * 100).toFixed(2)} <span> &nbsp; % </span></span>
 							</div>
 							<div>
 								<span className="per-label">{lang.MALE}</span>
-								<span className="cal-number">{(totalCal / NEEDED_CAL.MALE * 100).toFixed(2)}%</span>
+								<span className="cal-number">{(totalCal / NEEDED_CAL.MALE * 100).toFixed(2)} <span> &nbsp; % </span></span>
 							</div>
 						</div>
 					</div>
@@ -214,11 +198,11 @@ const MbbFinal = ({ lang, selection }) => {
 	);
 }
 
-MbbFinal.propTypes = {
+MbbResultPic.propTypes = {
 	selectHandle: PropTypes.func
 }
 
-MbbFinal.defaultProps = {
+MbbResultPic.defaultProps = {
 }
 
-export default MbbFinal
+export default MbbResultPic

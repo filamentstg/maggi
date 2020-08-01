@@ -1,12 +1,18 @@
 import Layout from "../components/layout/layout-mbb";
 import SEO from "../components/layout/seo";
 import React, { Component } from "react";
+import { renderToString } from "react-dom/server";
+
 import { MAKE_BALANCEC_BOWL_LANG as lang } from "../language/en";
 import MbbStepOne from "../components/mbb-steps/mbb-stepone";
 import MbbStepTwo from "../components/mbb-steps/mbb-steptwo";
 import MbbStepThree from "../components/mbb-steps/mbb-stepthree";
 import MbbStepFinal from "../components/mbb-steps/mbb-final";
 import WarningModal from "../components/mbb-steps/warning-modal";
+import MbbResultPic from "../components/mbb-steps/mbb-result-pic";
+
+import { html2png } from "../util/png-convert";
+
 import bgImage from "../images/make-balanced-bowl/mbb-bg-1.jpg";
 import bgImageLarge from "../images/make-balanced-bowl/final/bg-op.jpg";
 
@@ -146,6 +152,17 @@ export default class MakeBalancedBowlPage extends Component {
     });
   };
 
+  saveResultPic = () => {
+    const htmlRl = renderToString(
+      <MbbResultPic
+        lang={lang}
+        selection={this.state.activeStep.selectedItem}
+      />
+    );
+    html2png(htmlRl);
+    console.log("rel: ", htmlRl);
+  };
+
   renderStep(step) {
     switch (step) {
       case 0:
@@ -246,18 +263,16 @@ export default class MakeBalancedBowlPage extends Component {
                       />
                     </svg>
                   </span>
-                  <span>
+                  <span title="" onClick={this.saveResultPic}>
                     <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 14 14"
-                      fill="none"
+                      version="1.1"
                       xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
                     >
-                      <path
-                        d="M9.33274 7C9.33274 5.71492 8.2845 4.66667 6.99942 4.66667C5.71434 4.66667 4.66609 5.71492 4.66609 7C4.66609 8.28508 5.71434 9.33333 6.99942 9.33333C8.2845 9.33333 9.33274 8.28508 9.33274 7ZM10.5904 7C10.5904 8.98683 8.98624 10.591 6.99942 10.591C5.01259 10.591 3.40843 8.98683 3.40843 7C3.40843 5.01317 5.01259 3.40901 6.99942 3.40901C8.98624 3.40901 10.5904 5.01317 10.5904 7ZM11.5751 3.26318C11.5751 3.72809 11.2012 4.10142 10.7368 4.10142C10.2725 4.10142 9.89857 3.72751 9.89857 3.26318C9.89857 2.79884 10.2725 2.42493 10.7368 2.42493C11.2012 2.42493 11.5751 2.79884 11.5751 3.26318ZM6.99942 1.25768C5.97859 1.25768 3.79109 1.17543 2.87059 1.54001C2.55151 1.66776 2.31468 1.82235 2.06851 2.06851C1.82235 2.31468 1.66718 2.55151 1.54001 2.87059C1.17543 3.79109 1.25768 5.97859 1.25768 6.99942C1.25768 8.02025 1.17543 10.2077 1.54001 11.1282C1.66776 11.4473 1.82235 11.6842 2.06851 11.9303C2.31468 12.1765 2.55151 12.3317 2.87059 12.4588C3.79109 12.8234 5.97859 12.7412 6.99942 12.7412C8.02025 12.7412 10.2077 12.8234 11.1282 12.4588C11.4473 12.3311 11.6842 12.1765 11.9303 11.9303C12.1765 11.6842 12.3317 11.4473 12.4588 11.1282C12.8234 10.2077 12.7412 8.02025 12.7412 6.99942C12.7412 5.97859 12.8234 3.79109 12.4588 2.87059C12.3311 2.55151 12.1765 2.31468 11.9303 2.06851C11.6842 1.82235 11.4473 1.66718 11.1282 1.54001C10.2077 1.17543 8.02025 1.25768 6.99942 1.25768ZM13.9994 7C13.9994 7.966 14.0087 8.92324 13.9539 9.88924C13.8991 11.0104 13.6441 12.0038 12.824 12.824C12.0038 13.6441 11.0104 13.8996 9.88924 13.9539C8.92324 14.0087 7.966 13.9994 7 13.9994C6.034 13.9994 5.07675 14.0087 4.11076 13.9539C2.98959 13.8991 1.99618 13.6441 1.17602 12.824C0.355851 12.0038 0.100352 11.0104 0.0461019 9.88924C-0.00873131 8.92324 0.000601997 7.966 0.000601997 7C0.000601997 6.034 -0.00873131 5.07675 0.0461019 4.11076C0.100935 2.98959 0.355851 1.99618 1.17602 1.17602C1.99618 0.355851 2.98959 0.100352 4.11076 0.0461019C5.07675 -0.00873128 6.034 0.00060199 7 0.00060199C7.966 0.00060199 8.92324 -0.00873128 9.88924 0.0461019C11.0104 0.100935 12.0038 0.355851 12.824 1.17602C13.6441 1.99618 13.8996 2.98959 13.9539 4.11076C14.0087 5.07675 13.9994 6.034 13.9994 7Z"
-                        fill="black"
-                      />
+                      <title>Save Your Maggi balanced bowl"</title>
+                      <path d="M27.844 11.252c-0.101-4.022-3.389-7.252-7.433-7.252-2.369 0-4.477 1.109-5.839 2.835-0.764-0.987-1.959-1.624-3.303-1.624-2.307 0-4.176 1.871-4.176 4.179 0 0.201 0.015 0.399 0.043 0.592-0.351-0.063-0.711-0.098-1.080-0.098-3.344-0-6.054 2.712-6.054 6.058s2.71 6.058 6.054 6.058h2.868l7.078 7.328 7.078-7.328 3.484-0c3.004-0.006 5.438-2.444 5.438-5.451 0-2.565-1.771-4.716-4.156-5.296zM16 26l-6-6h4v-6h4v6h4l-6 6z"></path>
                     </svg>
                   </span>
                 </div>
