@@ -1,5 +1,4 @@
-
-import html2canvas from "html2canvas";
+// import html2canvas from "html2canvas";
 function offscreenElement(element) {
 	if (element) {
 		element.oldStyle = {
@@ -209,13 +208,11 @@ export const html2png = (html, callback) => {
   `;
 
 	iframe.contentWindow.document.body.innerHTML = css + html;
+	const html2canvas = require('html2canvas');
 	html2canvas(iframe.contentWindow.document.body).then(canvas => {
 		canvas.toBlob(blob => {
 			downloadFile(blob);
 		})
-		// doc.body.removeChild(iframe);
+		doc.body.removeChild(iframe);
 	});
-	// html2canvas(iframe.contentWindow.document.body).then(function (canvas) {
-	// 	document.body.appendChild(canvas);
-	// });
 }
