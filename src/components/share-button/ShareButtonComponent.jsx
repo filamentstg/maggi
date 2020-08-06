@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+import { window } from "browser-monads";
 export default class ShareButtonComponent extends React.PureComponent {
   state = {}
 
@@ -39,49 +39,42 @@ export default class ShareButtonComponent extends React.PureComponent {
       })
     }
   }
-  async handleshare() {
-    this.props.setInfo({
-      title: 'Make your ballanced bowl tesst 111',
-      des: 'Make your ballanced bowl - test des',
-      pic: 'https://scontent.fsgn2-5.fna.fbcdn.net/v/t39.2081-6/c0.0.129.129a/p128x128/105355716_290046669011365_2583618676516322268_n.png?_nc_cat=102&_nc_sid=eaa83b&_nc_ohc=YOcA6uF9qiQAX8cTwtF&_nc_ht=scontent.fsgn2-5.fna&oh=f543b80b8b1d3198a5a18a7db7c78448&oe=5F287DE9'
-    })
+ async handleshare() {
+    console.log(111);
     if (typeof window !== "undefined") {
-      const sdk = await this.getFbSdk({ appId: '290022452347120', version: 'v7.0' })
-      sdk.ui({
-        // method: 'share_open_graph',
-        // action_type: 'og.shares',
-        // action_properties: JSON.stringify({
-        //   object: {
-        //     'og:url': 'https://filamentstg.github.io/maggi/',
-        //     'og:title': 'Make your ballanced bowl',
-        //     'og:description': 'Make your ballanced bowl - test des',
-        //     'og:image': 'https://scontent.fsgn2-5.fna.fbcdn.net/v/t39.2081-6/c0.0.129.129a/p128x128/105355716_290046669011365_2583618676516322268_n.png?_nc_cat=102&_nc_sid=eaa83b&_nc_ohc=YOcA6uF9qiQAX8cTwtF&_nc_ht=scontent.fsgn2-5.fna&oh=f543b80b8b1d3198a5a18a7db7c78448&oe=5F287DE9'
-        //   }
-        // })
+      const sdk = await this.getFbSdk({ appId: '1173539899688442', version: 'v7.0' })
+      sdk.ui(
+        {
           method: `share`,
-          // picture: 'https://scontent.fsgn2-5.fna.fbcdn.net/v/t39.2081-6/c0.0.129.129a/p128x128/105355716_290046669011365_2583618676516322268_n.png?_nc_cat=102&_nc_sid=eaa83b&_nc_ohc=YOcA6uF9qiQAX8cTwtF&_nc_ht=scontent.fsgn2-5.fna&oh=f543b80b8b1d3198a5a18a7db7c78448&oe=5F287DE9',
-          // source: 'https://scontent.fsgn2-5.fna.fbcdn.net/v/t39.2081-6/c0.0.129.129a/p128x128/105355716_290046669011365_2583618676516322268_n.png?_nc_cat=102&_nc_sid=eaa83b&_nc_ohc=YOcA6uF9qiQAX8cTwtF&_nc_ht=scontent.fsgn2-5.fna&oh=f543b80b8b1d3198a5a18a7db7c78448&oe=5F287DE9',
-          caption: 'MAggi',
-          href: 'https://maggistaging.herokuapp.com/',
-          description: 'Make your ballanced bowl'
+          caption: "Maggi",
+          description: "Make your ballanced bowl",
+          href: "https://filamentstg.github.io/maggi/",
         },
         function (response) {
           if (response) {
-            alert('success');
           } else {
-            alert('error');
           }
-        })
+        }
+      );
       }
   }
   render() {
     return (
-      <>
-        <div className="share-button" data-href="https://maggistaging.herokuapp.com/" style={{padding: '20px'}}>
-          {/* <span onClick={() => window.open("https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmaggistaging.herokuapp.com%2F&amp;src=sdkpreparse", "", "location=no")}>share</span> */}
-          <span onClick={() => this.handleshare()}>share</span>
-        </div>
-      </>
-    )
+      <span onClick={() => this.handleshare()}>
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 14 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="7" cy="7" r="7" fill="black" />
+          <path
+            d="M9 2.07193V3.65853H8.09141C7.37951 3.65853 7.24654 4.01315 7.24654 4.52394V5.65976H8.94222L8.71665 7.43867H7.24654V12H5.47566V7.43867H4V5.65976H5.47566V4.34971C5.47566 2.82926 6.37277 2 7.68064 2C8.3055 2 8.84369 2.04808 9 2.07193Z"
+            fill="white"
+          />
+        </svg>
+      </span>
+    );
   }
 }

@@ -10,7 +10,7 @@ import MbbStepThree from "../components/mbb-steps/mbb-stepthree";
 import MbbStepFinal from "../components/mbb-steps/mbb-final";
 import WarningModal from "../components/mbb-steps/warning-modal";
 import MbbResultPic from "../components/mbb-steps/mbb-result-pic";
-
+import ShareButton from "../components/share-button/ShareButtonComponent";
 import { html2png } from "../util/png-convert";
 
 import bgImage from "../images/make-balanced-bowl/mbb-bg-1.jpg";
@@ -248,21 +248,7 @@ export default class MakeBalancedBowlPage extends Component {
               <div className="share-btn-gr">
                 <span>{lang.SHARE_RECIPE}</span>
                 <div>
-                  <span>
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle cx="7" cy="7" r="7" fill="black" />
-                      <path
-                        d="M9 2.07193V3.65853H8.09141C7.37951 3.65853 7.24654 4.01315 7.24654 4.52394V5.65976H8.94222L8.71665 7.43867H7.24654V12H5.47566V7.43867H4V5.65976H5.47566V4.34971C5.47566 2.82926 6.37277 2 7.68064 2C8.3055 2 8.84369 2.04808 9 2.07193Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </span>
+                  <ShareButton />
                   <span title="" onClick={this.saveResultPic}>
                     <svg
                       version="1.1"
