@@ -88,7 +88,7 @@ const MbbFinal = ({ lang, selection }) => {
 			<span className="result-img">
 				<img src={margiBowl} alt="Maggi" />
 				{
-					vegBowls.reverse().map((item, index) => (
+					vegBowls.map((item, index) => (
 						<img key={index} src={require(`../../images/make-balanced-bowl/final/bow-ing/step3/${item}.png`)} alt={lang[`STEP3_OP${item}_TITLE`]} />
 					))
 				}
