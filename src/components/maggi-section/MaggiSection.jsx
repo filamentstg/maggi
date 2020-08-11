@@ -77,7 +77,7 @@ export default class MaggiSectionComponent extends React.PureComponent {
                       <p>
                         MAGGI®’s signature tastemakers are made from only the
                         best selected ingredients to enhance the flavour
-                        profiles of your noodles
+                        of your noodles
                       </p>
                     </div>
                   </div>
@@ -98,7 +98,7 @@ export default class MaggiSectionComponent extends React.PureComponent {
                   Convenience
                 </p>
                 <div className="box-container-content">
-                  <img src={convenience} alt="" style={{ marginTop: "2em" }} />
+                  <img src={convenience} alt="" style={{ marginTop: "1.5em" }} />
                   <p>MAGGI® Noodles can be prepared within 2-minutes</p>
                 </div>
               </div>
