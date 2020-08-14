@@ -248,7 +248,7 @@ export default class CarouselSection extends React.PureComponent {
               ></span>
               <div>
                 <Carousel
-                  autoPlay={false}
+                  autoPlay={true}
                   infiniteLoop
                   interval={4000}
                   statusFormatter={() => ""}
