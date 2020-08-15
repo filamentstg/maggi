@@ -3,7 +3,7 @@ import SEO from "../components/layout/seo";
 import React, { Component } from "react";
 import { renderToString } from "react-dom/server";
 
-import { MAKE_BALANCEC_BOWL_LANG as lang } from "../language/en";
+import { lang, activeLocale } from "../language/index";
 import MbbStepOne from "../components/mbb-steps/mbb-stepone";
 import MbbStepTwo from "../components/mbb-steps/mbb-steptwo";
 import MbbStepThree from "../components/mbb-steps/mbb-stepthree";
@@ -273,7 +273,7 @@ export default class MakeBalancedBowlPage extends Component {
       <>
         <Layout bg={this.state.activeStep.id === 4 ? bgImageLarge : bgImage}>
           <SEO title={lang.MAKE_A_BALANCED_BOWL} />
-          <div className="mbb-main-content">
+          <div className={"mbb-main-content " + activeLocale}>
             <div className="step-content-wrapper">
               <div className="step-header">
                 <h1 className="title">{lang.MAKE_YOUR_BALANCED_BOWL}</h1>

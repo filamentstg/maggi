@@ -1,4 +1,3 @@
-import PropTypes from "prop-types"
 import React from "react"
 import { Link } from "gatsby";
 import { navigateTo } from 'gatsby-link';
@@ -8,6 +7,9 @@ import closeIcon from '../../images/layout/close.png';
 import tomato from '../../images/layout/chilli-1.png';
 import herb from '../../images/layout/herb-1.png';
 import pepper from '../../images/layout/pepper-3.png';
+
+import { activeLocale } from "../../language/index";
+
 const header_data = [
 	{
 		title: "Make Your Balanced Bowl",
@@ -34,6 +36,7 @@ class Header extends React.PureComponent {
 	}
 
 	componentDidMount() {
+		this.setState({ lang: activeLocale });
 		if (window.innerWidth <= 1159) {
 			this.setState({
 				isMobile: true
@@ -50,6 +53,12 @@ class Header extends React.PureComponent {
 				})
 			}
 		});
+	}
+
+	setLocale = (locale) => {
+		this.setState({ lang: locale });
+		localStorage.setItem('lang', locale);
+		window.location.reload();
 	}
 
 	changeRoute = (action) => {
@@ -101,10 +110,10 @@ class Header extends React.PureComponent {
 										</div>
 									))}
 									<div className="main-header_menu-item language">
-										<div className={`language-common en ${lang === 'en' ? 'active' : ''}`} onClick={() => this.setState({ lang: 'en' })}>
+										<div className={`language-common en ${lang === 'en' ? 'active' : ''}`} onClick={() => this.setLocale('en')}>
 											<span>EN</span>
 										</div>
-										<div className={`language-common bm ${lang === 'bm' ? 'active' : ''}`} onClick={() => this.setState({ lang: 'bm' })}>
+										<div className={`language-common bm ${lang === 'bm' ? 'active' : ''}`} onClick={() => this.setLocale('bm')}>
 											<span>BM</span>
 										</div>
 
@@ -114,10 +123,10 @@ class Header extends React.PureComponent {
 									{!isShowMenu &&
 										<div style={{ display: 'flex', alignItems: 'center' }}>
 											<div className="main-header_menu-item language" style={{ marginRight: '.5em' }}>
-												<div className={`language-common en ${lang === 'en' ? 'active' : ''}`} onClick={() => this.setState({ lang: 'en' })}>
+												<div className={`language-common en ${lang === 'en' ? 'active' : ''}`} onClick={() => this.setLocale('en')}>
 													<span>EN</span>
 												</div>
-												<div className={`language-common bm ${lang === 'bm' ? 'active' : ''}`} onClick={() => this.setState({ lang: 'bm' })}>
+												<div className={`language-common bm ${lang === 'bm' ? 'active' : ''}`} onClick={() => this.setLocale('bm')}>
 													<span>BM</span>
 												</div>
 												{/* <span>{window.innerWidth}</span> */}
