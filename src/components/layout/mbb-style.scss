@@ -472,6 +472,15 @@
         height: 150px;
         padding: 10px;
       }
+      .step-content-wrapper
+        .step-content
+        .step-final
+        .result-content
+        .result-calc
+        .row-line
+        .per-label {
+        font-size: 0.7rem;
+      }
     }
   }
 
@@ -515,6 +524,11 @@
 @media only screen and (max-width: 1024px) {
   .mbb-wrapper {
     background-image: url("../../images/make-balanced-bowl/mb-bg.jpg") !important;
+  }
+  .mbb-wrapper .mbb-wrapper-container .mbb-main-content.bm {
+    .stepx-wp .__item {
+      background-size: contain !important;
+    }
   }
   .mbb-wrapper .warning-modal .warning-modal-content {
     width: 80%;
@@ -707,16 +721,32 @@
   .mbb-wrapper {
     background-image: url("../../images/make-balanced-bowl/mb-bg.jpg") !important;
   }
-  .mbb-wrapper
-    .mbb-wrapper-container
-    .mbb-main-content.bm
+  .mbb-wrapper .mbb-wrapper-container .mbb-main-content.bm {
     .step-content-wrapper
-    .step-content
-    .step-final
-    .result-content
-    .cri-result {
-    min-width: 50%;
+      .step-content
+      .step-final
+      .result-content
+      .cri-result {
+      min-width: 50%;
+    }
+    .step-content-wrapper .step-content .stepx-wp.step1-wrapper .__item {
+      padding: 5px;
+    }
+    .step2-wrapper .__item {
+      min-width: auto;
+    }
+    .step-content-wrapper .step-content .stepx-wp .__item {
+      padding: 0px;
+      height: 100px;
+    }
+    .stepx-wp .__item {
+      background-size: contain !important;
+    }
+    .step-content-wrapper .step-content .step3-wrapper .__item {
+      min-width: auto;
+    }
   }
+
   .mbb-wrapper .warning-modal .warning-modal-content {
     width: 80%;
     .btn {
