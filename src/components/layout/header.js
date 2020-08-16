@@ -8,21 +8,21 @@ import tomato from '../../images/layout/chilli-1.png';
 import herb from '../../images/layout/herb-1.png';
 import pepper from '../../images/layout/pepper-3.png';
 
-import { activeLocale } from "../../language/index";
+import { activeLocale, lang } from "../../language/index";
 
 const header_data = [
 	{
-		title: "Make Your Balanced Bowl",
+		title: lang.MAKE_YOUR_BALANCED_BOWL,
 		action: 0,
 		link: '/make-balanced-bowl'
 	},
 	{
-		title: "Why MAGGI®?",
+		title: lang.WHY_MAGGI,
 		action: 1,
 		link: '/#why-maggi'
 	},
 	{
-		title: "Delicious Recipes",
+		title: lang.DELICIOUS_RECIPES,
 		action: 2,
 		link: '/#delicious-recipes'
 	},
