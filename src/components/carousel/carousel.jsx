@@ -177,6 +177,7 @@ export default class CarouselSection extends React.PureComponent {
     } else if (currentSlide === 3) {
       isDisplayVege = true;
     }
+    console.log(activeLocale);
     return (
       <div className={`main-carousel ${activeLocale === 'bm' ? 'bm-lang' : ''}`} >
         {
