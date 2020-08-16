@@ -56,9 +56,11 @@ class Header extends React.PureComponent {
 	}
 
 	setLocale = (locale) => {
-		this.setState({ lang: locale });
-		localStorage.setItem('lang', locale);
-		window.location.reload();
+    if (typeof window !== 'undefined') {
+      this.setState({ lang: locale });
+      localStorage.setItem('lang', locale);
+      window.location.reload();
+    }
 	}
 
 	changeRoute = (action) => {
