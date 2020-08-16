@@ -58,7 +58,7 @@ class Header extends React.PureComponent {
 	setLocale = (locale) => {
     if (typeof window !== 'undefined') {
       this.setState({ lang: locale });
-      localStorage.setItem('lang', locale);
+      window.localStorage.setItem('lang', locale);
       window.location.reload();
     }
 	}
