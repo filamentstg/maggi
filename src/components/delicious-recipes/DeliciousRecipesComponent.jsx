@@ -3,6 +3,8 @@ import { Link } from "gatsby";
 import { Carousel } from "react-responsive-carousel";
 import { window } from "browser-monads";
 import "./styles.scss";
+import { lang, activeLocale } from "../../language/index";
+
 import base1 from "../../images/delicious-recipes/Kari-Bowl.png";
 import base2 from "../../images/delicious-recipes/Ayam-Bowl.png";
 import base3 from "../../images/delicious-recipes/Tomyum-Bowl.png";
@@ -44,9 +46,9 @@ const curry_carbohydrates = {
   header: `url(${line})`,
   left_image: `url(${palm})`,
   right_image: `url(${noddle_1})`,
-  left_title: "a palm size",
-  right_title: "MAGGI® 2-Minute Curry Noodles",
-  header_title: "carbohydrates",
+  left_title: lang.A_PALM_SIZE,
+  right_title: lang.CURRY_DES,
+  header_title: lang.CARBOHYDRATES,
   color: "#AF3837",
 };
 
@@ -55,9 +57,9 @@ const curry_protein = {
   left_image: `url(${fistful})`,
   right_image_1: `url(${chicken})`,
   right_image_2: `url(${egg})`,
-  left_title: "a fistful",
-  right_title_1: "Chicken Breast (boiled and pulled thinly)",
-  right_title_2: "Hard-boiled Egg",
+  left_title: lang.FISTFUL,
+  right_title_1: lang.CHICKEN_BREAST_1,
+  right_title_2: lang.HARD_BOIL_EGG,
   header_title: "Protein",
   color: "#AF3837",
 };
@@ -67,10 +69,10 @@ const curry_vegetables = {
   left_image: `url(${handful})`,
   right_image_1: `url(${mustard})`,
   right_image_2: `url(${carrot})`,
-  left_title: "a handful",
-  right_title_1: "Mustard Leaf/Sawi",
-  right_title_2: "Carrot (sliced thinly)",
-  header_title: "Vegetables",
+  left_title: lang.HANDFUL,
+  right_title_1: lang.SAWI,
+  right_title_2: lang.CARROT,
+  header_title: lang.VEGETABLES,
   color: "#AF3837",
 };
 
@@ -78,9 +80,9 @@ const chicken_carbohydrates = {
   header: `url(${line2})`,
   left_image: `url(${palm})`,
   right_image: `url(${noddle_2})`,
-  left_title: "a palm size",
-  right_title: "MAGGI® 2-Minute Chicken Noodles",
-  header_title: "carbohydrates",
+  left_title: lang.PALMFUL,
+  right_title: lang.CHICKEN_DES,
+  header_title: lang.CARBOHYDRATES,
   color: "#7DA03E",
 };
 
@@ -89,10 +91,10 @@ const chicken_protein = {
   left_image: `url(${fistful})`,
   right_image_1: `url(${chicken})`,
   right_image_2: `url(${egg})`,
-  left_title: "a fistful",
-  right_title_1: "Chicken Breast (sliced thinly)",
-  right_title_2: "Hard-boiled Egg",
-  header_title: "Protein",
+  left_title: lang.FISTFUL,
+  right_title_1: lang.CHICKEN_BREAST_2,
+  right_title_2: lang.HARD_BOIL_EGG,
+  header_title: lang.PROTEIN,
   color: "#7DA03E",
 };
 
@@ -101,10 +103,10 @@ const chicken_vegetables = {
   left_image: `url(${handful})`,
   right_image_1: `url(${bokchoi})`,
   right_image_2: `url(${carrot})`,
-  left_title: "a handful",
-  right_title_1: "Bok Choy",
-  right_title_2: "Carrot (sliced)",
-  header_title: "Vegetables",
+  left_title: lang.HANDFUL,
+  right_title_1: lang.BOK_CHOY,
+  right_title_2: lang.CARROT_2,
+  header_title: lang.VEGETABLES,
   color: "#7DA03E",
 };
 
@@ -112,9 +114,9 @@ const tomyum_carbohydrates = {
   header: `url(${line3})`,
   left_image: `url(${palm})`,
   right_image: `url(${noddle_3})`,
-  left_title: "a palm size",
-  right_title: "MAGGI® 2-Minute Tom Yam Noodles",
-  header_title: "carbohydrates",
+  left_title: lang.PALMFUL,
+  right_title: lang.TOM_YAM_DES,
+  header_title: lang.CARBOHYDRATES,
   color: "#5E3266",
 };
 
@@ -123,10 +125,10 @@ const tomyum_protein = {
   left_image: `url(${fistful})`,
   right_image_1: `url(${prawn})`,
   right_image_2: `url(${squid})`,
-  left_title: "a fistful",
-  right_title_1: "Prawn",
-  right_title_2: "Squid",
-  header_title: "Protein",
+  left_title: lang.FISTFUL,
+  right_title_1: lang.PRAWN,
+  right_title_2: lang.SQUID,
+  header_title: lang.PROTEIN,
   color: "#5E3266",
 };
 
@@ -135,10 +137,10 @@ const tomyum_vegetables = {
   left_image: `url(${handful})`,
   right_image_1: `url(${cauliflower})`,
   right_image_2: `url(${mushroom})`,
-  left_title: "a handful",
-  right_title_1: "Cauliflower",
-  right_title_2: "Straw Mushrooms",
-  header_title: "Vegetables",
+  left_title: lang.HANDFUL,
+  right_title_1: lang.CAULIFLOWER,
+  right_title_2: lang.STRAW_MUSHROOM,
+  header_title: lang.VEGETABLES,
   color: "#5E3266",
 };
 
@@ -211,7 +213,7 @@ export default class DeliciousRecipiesComponent extends React.PureComponent {
     const hideArrowBtn = window.innerWidth < 400 ? true : false;
     return (
       <>
-        <div data-aos="fade-up" data-aos-offset="0" className="delicious-recipes" id="">
+        <div data-aos="fade-up" data-aos-offset="0" className={`delicious-recipes ${activeLocale === 'bm' ? 'bm-lang' : ''}`} id="">
           {
             isMobile &&
             <>
@@ -222,15 +224,15 @@ export default class DeliciousRecipiesComponent extends React.PureComponent {
               <img src={herb_3} alt="herb_2" className="herb-4" />
             </>
           }
-          <h1>Delicious Recipes</h1>
+          <h1>{lang.DELICIOUS_RECIPES}</h1>
           {
             !isMobile ?
               <div className="columns custom-row">
                 <div data-aos="zoom-out-right" data-aos-offset="120" className="column is-4" style={{ position: "relative" }}>
                   <div className="delicious-recipes_kari-box">
                     <div className="delicious-recipes-header">
-                      <span>MAGGI® 2-Minute Noodles</span>
-                      <h1>Curry</h1>
+                      <span>{lang.CURRY_DES}</span>
+                      <h1>{lang.CURRY}</h1>
                     </div>
                     <Calories data={curry_carbohydrates} />
                     <Calories data={curry_protein} multiple />
@@ -241,8 +243,8 @@ export default class DeliciousRecipiesComponent extends React.PureComponent {
                 <div data-aos="zoom-out-up" data-aos-offset="120" className="column is-4" style={{ position: "relative" }}>
                   <div className="delicious-recipes_ayam-box">
                     <div className="delicious-recipes-header">
-                      <span>MAGGI® 2-Minute Noodles</span>
-                      <h1>Chicken</h1>
+                      <span>{lang.CHICKEN_DES}</span>
+                      <h1>{lang.CHICKEN}</h1>
                     </div>
                     <Calories data={chicken_carbohydrates} />
                     <Calories data={chicken_protein} multiple />
@@ -253,8 +255,8 @@ export default class DeliciousRecipiesComponent extends React.PureComponent {
                 <div data-aos="zoom-out-left" data-aos-offset="120" className="column is-4" style={{ position: "relative" }}>
                   <div className="delicious-recipes_tomyum-box">
                     <div className="delicious-recipes-header">
-                      <span>MAGGI® 2-Minute Noodles</span>
-                      <h1>Tom Yam</h1>
+                      <span>{lang.TOM_YAM_DES}</span>
+                      <h1>{lang.TOM_YAM}</h1>
                     </div>
                     <Calories data={tomyum_carbohydrates} />
                     <Calories data={tomyum_protein} multiple />
@@ -295,8 +297,8 @@ export default class DeliciousRecipiesComponent extends React.PureComponent {
                   <div key="slide1" className="mobile-recipes-box">
                     <div className="delicious-recipes_kari-box">
                       <div className="delicious-recipes-header">
-                        <span>MAGGI® 2-Minute Noodles</span>
-                        <h1>Curry</h1>
+                        <span>{lang.CURRY_DES}</span>
+                        <h1>{lang.CURRY}</h1>
                       </div>
                       <Calories data={curry_carbohydrates} />
                       <Calories data={curry_protein} multiple />
@@ -307,8 +309,8 @@ export default class DeliciousRecipiesComponent extends React.PureComponent {
                   <div key="slide2" className="mobile-recipes-box">
                     <div className="delicious-recipes_ayam-box">
                       <div className="delicious-recipes-header">
-                        <span>MAGGI® 2-Minute Noodles</span>
-                        <h1>Chicken</h1>
+                        <span>{lang.CHICKEN_DES}</span>
+                        <h1>{lang.CHICKEN}</h1>
                       </div>
                       <Calories data={chicken_carbohydrates} />
                       <Calories data={chicken_protein} multiple />
@@ -319,8 +321,8 @@ export default class DeliciousRecipiesComponent extends React.PureComponent {
                   <div key="slide3" className="mobile-recipes-box">
                     <div className="delicious-recipes_tomyum-box">
                       <div className="delicious-recipes-header">
-                        <span>MAGGI® 2-Minute Noodles</span>
-                        <h1>Tom Yam</h1>
+                        <span>{lang.TOM_YAM_DES}</span>
+                        <h1>{lang.TOM_YAM}</h1>
                       </div>
                       <Calories data={tomyum_carbohydrates} />
                       <Calories data={tomyum_protein} multiple />
@@ -333,7 +335,7 @@ export default class DeliciousRecipiesComponent extends React.PureComponent {
           }
           <Link to="/make-balanced-bowl">
             <button className="btn btn-primary button-responsive">
-              Customise your own Balanced Bowl
+              {lang.CUSTOMMIZE_YOUR_BALANCED_BOWL}
             </button>
           </Link>
         </div>

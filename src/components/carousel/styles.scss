@@ -1,5 +1,17 @@
 .main-carousel {
-
+  &.bm-lang {
+    .carousel {
+      height: 20rem;
+    }
+    .main-carousel-balance-bowl-carbohydrates span {
+      left: 6.5em;
+    }
+    .main-carousel-balance-bowl-vegetable span {
+      font-size: 1.1em;
+      top: 6.2em;
+      right: 2.8em;
+    }
+  }
   .glass-of-water {
     position: absolute;
     top: 35%;

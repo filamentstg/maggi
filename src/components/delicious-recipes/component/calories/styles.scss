@@ -1,4 +1,9 @@
 .delicious-recipes{
+  &.bm-lang {
+    .delicious-recipes-calories_body-right {
+      width: 70%;
+    }
+  }
   &-calories {
     margin-bottom: 2em;
     span {

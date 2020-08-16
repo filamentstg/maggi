@@ -8,6 +8,7 @@ import icon2 from "../../images/why-maggi/icon 2.png";
 import convenience from "../../images/why-maggi/convenience icon.png";
 import spices from "../../images/layout/spices.png";
 import noodles from "../../images/layout/noodles.png";
+import { lang, activeLocale } from "../../language/index";
 
 export default class MaggiSectionComponent extends React.PureComponent {
   state = {
@@ -37,7 +38,7 @@ export default class MaggiSectionComponent extends React.PureComponent {
     const { isMobile } = this.state;
     return (
       <>
-        <div className="why-maggi" id="">
+        <div className={`why-maggi ${activeLocale === 'bm' ? 'bm-lang' : ''}`} id="">
           {
             isMobile &&
             <>
@@ -45,16 +46,13 @@ export default class MaggiSectionComponent extends React.PureComponent {
               <img src={noodles} alt="noodles" className="noodles" />
             </>
           }
-          <h1>Why MAGGI®?</h1>
+          <h1>{lang.WHY_MAGGI}</h1>
           <p className="why-maggi-content">
-            MAGGI® 2-Minute Noodles are carbohydrate-rich foods like rice,
-            cereal and potato that can be used to prepare balanced dishes for your
-            family! Apart from the delicious taste and aroma that you know and
-            love, you can also enjoy the following benefits of cooking with
-            MAGGI® 2-Minute Noodles:
+            {lang.WHY_MAGGI_DES_1} <br/>
+            {lang.WHY_MAGGI_DES_2}
           </p>
         </div>
-        <div className="columns custom-mobile" style={{ margin: 0 }}>
+        <div className={`columns custom-mobile why-maggi-des ${activeLocale === 'bm' ? 'bm-lang' : ''}`} style={{ margin: 0 }}>
           <div
             className="column is-8-desktop is-8-widescreen is-8-fullhd custom-mobile-ingredient"
             style={{ width: "64%", margin: 'auto' }}
@@ -63,21 +61,18 @@ export default class MaggiSectionComponent extends React.PureComponent {
               <div className="custom-box-item">
                 <img src={baseBox} alt="" />
                 <div className="box-container">
-                  <p className="box-container-header">Selected Ingredients</p>
+                  <p className="box-container-header">{lang.SELECTED_INGREDIENT}</p>
                   <div className="columns is-gapless custom-mobile">
                     <div className="column is-6 box-container-content">
                       <img src={icon1} alt="" />
                       <p>
-                        MAGGI® Noodles are made from 100% Australian Wheat with
-                        a good source of protein
+                        {lang.SELECTED_INGREDIENT_DES_1}
                       </p>
                     </div>
                     <div className="column is-6 box-container-content">
                       <img src={icon2} alt="" />
                       <p>
-                        MAGGI®’s signature tastemakers are made from only the
-                        best selected ingredients to enhance the flavour
-                        of your noodles
+                        {lang.SELECTED_INGREDIENT_DES_2}
                       </p>
                     </div>
                   </div>
@@ -95,11 +90,11 @@ export default class MaggiSectionComponent extends React.PureComponent {
               <img src={baseBox2} alt="" style={{ height: "100%" }} />
               <div className="box-container">
                 <p className="convenience-title" className="box-container-header">
-                  Convenience
+                  {lang.CONVENIENCE}
                 </p>
                 <div className="box-container-content">
                   <img src={convenience} alt="" style={{ marginTop: "1.5em" }} />
-                  <p>MAGGI® Noodles can be prepared within 2-minutes</p>
+                  <p>{lang.CONVENIENCE_DES}</p>
                 </div>
               </div>
             </div>

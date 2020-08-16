@@ -6,6 +6,18 @@
   &-content {
     padding: 1em 5em;
   }
+  &.bm-lang {
+    .why-maggi-content {
+      font-size: .95em;
+    }
+  }
+}
+.why-maggi-des {
+  &.bm-lang {
+    .custom-box-item .box-container-content p {
+      font-size: .9rem;
+    }
+  }
 }
 
 .custom-box {

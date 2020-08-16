@@ -8,6 +8,7 @@ import orange from '../../images/layout/orange.png';
 import cup from '../../images/layout/Cup.png';
 import herb_2 from '../../images/layout/herb-2.png';
 import stroke from '../../images/layout/stroke.png';
+import { lang, activeLocale } from "../../language/index";
 
 import "./styles.scss";
 import "./step.scss";
@@ -15,13 +16,11 @@ import "./step.scss";
 const Full_Bowl = () => {
   return (
     <>
-      <h1 className="carousel-header">Serve your family Balanced Bowls!</h1>
-      <p style={{ marginBottom: ".5em", padding: "0 3em"}}>
-        This visual guide aims to help you create wholesome Balanced Bowls using
-        MAGGI® noodles and a variety of fresh ingredients for your family from
-        the comfort of your own home.
+      <h1 className="carousel-header">{lang.SERVE_YOUR_FAMILY_WITH_BALANCED_BOWLS}</h1>
+      <p style={{ marginBottom: ".5em", padding: "0 3em" }} >
+        {lang.CAROUSEL_INSTRUCTION}
       </p>
-      <p style={{ fontFamily: 'AvenirNext'}}>Swipe right to find out how!</p>
+      <p style={{ fontFamily: 'AvenirNext' }}>{lang.SWIPE_RIGHT}</p>
     </>
   );
 };
@@ -29,8 +28,8 @@ const Full_Bowl = () => {
 const Step_1 = () => {
   return (
     <>
-      <h1>Step 1</h1>
-      <p>Pick your favourite MAGGI® Noodle as your carbohydrate-of-choice</p>
+      <h1>{lang.STEP_1}</h1>
+      <p>{lang.STEP_1_DES}</p>
       <div className="columns steps">
         <span className="steps-equal">=</span>
         <div className="column is-6 step">
@@ -42,10 +41,10 @@ const Step_1 = () => {
       </div>
       <div className="columns is-gapless is-mobile">
         <div className="column is-6">
-          <span className="sub-title-custom">1 fistful</span>
+          <span className="sub-title-custom">1 {lang.FISTFUL}</span>
         </div>
         <div className="column is-6">
-          <span className="sub-title-custom">1 packet</span>
+          <span className="sub-title-custom">1 {lang.PACKET}</span>
         </div>
       </div>
     </>
@@ -55,8 +54,8 @@ const Step_1 = () => {
 const Step_2 = () => {
   return (
     <>
-      <h1>Step 2</h1>
-      <p style={{ padding: ".8em 4em" }}>Pick protein to add to your noodles</p>
+      <h1>{lang.STEP_2}</h1>
+      <p style={{ padding: ".8em 4em" }}>{lang.STEP_2_DES}</p>
       <div className="columns steps">
         <span className="steps-equal">=</span>
         <div className="column is-6 step">
@@ -68,10 +67,10 @@ const Step_2 = () => {
       </div>
       <div className="columns is-gapless is-mobile">
         <div className="column is-6">
-          <span className="sub-title-custom">1 palm size</span>
+          <span className="sub-title-custom">1 {lang.PALM_SIZE}</span>
         </div>
         <div className="column is-6">
-          <span className="sub-title-custom">protein</span>
+          <span className="sub-title-custom">{lang.PROTEIN}</span>
         </div>
       </div>
     </>
@@ -81,8 +80,8 @@ const Step_2 = () => {
 const Step_3 = () => {
   return (
     <>
-      <h1>Step 3</h1>
-      <p style={{ padding: "0 4em" }}>Pick vegetables to add to your noodles</p>
+      <h1>{lang.STEP_3}</h1>
+      <p style={{ padding: "0 4em" }}>{lang.STEP_3_DES}</p>
       <div className="columns steps mobile-step-3">
         <span style={{ top: '70%' }} className="steps-equal">=</span>
         <div
@@ -96,10 +95,10 @@ const Step_3 = () => {
       </div>
       <div className="columns is-gapless is-mobile">
         <div className="column is-6">
-          <span className="sub-title-custom">1 handful</span>
+          <span className="sub-title-custom">{lang.HANDFUL_1}</span>
         </div>
         <div className="column is-6">
-          <span className="sub-title-custom">vegetables</span>
+          <span className="sub-title-custom">{lang.VEGETEBLES}</span>
         </div>
       </div>
     </>
@@ -179,7 +178,7 @@ export default class CarouselSection extends React.PureComponent {
       isDisplayVege = true;
     }
     return (
-      <div className="main-carousel">
+      <div className={`main-carousel ${activeLocale === 'bm' ? 'bm-lang' : ''}`} >
         {
           isMobile &&
           <>
@@ -195,10 +194,10 @@ export default class CarouselSection extends React.PureComponent {
               isMobile ?
               <div className="glass-of-water">
                 <img src={stroke} alt="stroke" className="stroke-mobile" />
-                <span>and a glass of water</span>
+                <span>{lang.AND_A_GLASS_OF_WATER}</span>
               </div> :
               <div className="glass-of-water">
-                <span>and a glass of water</span>
+                <span>{lang.AND_A_GLASS_OF_WATER}</span>
                 <div className="stroke"></div>
               </div>
             }
@@ -209,14 +208,14 @@ export default class CarouselSection extends React.PureComponent {
                     className={`main-carousel-balance-bowl-protein ${
                       isDisplayProtein ? "active" : ""
                     }`}
-                  >{isDisplayProtein ? <span>Protein</span> : null}</div>
+                  >{isDisplayProtein ? <span>{lang.PROTEIN}</span> : null}</div>
                 </div>
                 <div style={{ height: "50%" }}>
                   <div
                     className={`main-carousel-balance-bowl-carbohydrates ${
                       isDisplayCarbon ? "active" : ""
                     }`}
-                  >{isDisplayCarbon ? <span>Carbohydrates</span> : null}</div>
+                  >{isDisplayCarbon ? <span>{lang.CARBOHYDRATES}</span> : null}</div>
                 </div>
               </div>
               <div className="column">
@@ -224,7 +223,7 @@ export default class CarouselSection extends React.PureComponent {
                   className={`main-carousel-balance-bowl-vegetable ${
                     isDisplayVege ? "active" : ""
                   }`}
-                >{isDisplayVege ? <span>Vegetables</span> : null}</div>
+                >{isDisplayVege ? <span>{lang.VEGETABLES}</span> : null}</div>
               </div>
               <div className="main-carousel-balance-bowl-full"></div>
             </div>
@@ -248,7 +247,7 @@ export default class CarouselSection extends React.PureComponent {
               ></span>
               <div>
                 <Carousel
-                  autoPlay={true}
+                  autoPlay={false}
                   infiniteLoop
                   interval={4000}
                   statusFormatter={() => ""}
@@ -306,16 +305,15 @@ export default class CarouselSection extends React.PureComponent {
                   </span>
                 </div>
                 <p className="description">
-                  Serving sizes are just suggested approximate proportions of
-                  food you can include on your plate.{" "}
-                  <span onClick={() => {window.open('https://www.maggi.com.my/en/nurturing-a-healthier-future/healthy-eats')}}>Find out more.</span>
+                  {lang.SERVE_SIZE_SUGGESTED}{" "}
+                  <span onClick={() => { window.open('https://www.maggi.com.my/en/nurturing-a-healthier-future/healthy-eats') }}>{lang.FIND_OUT_MORE}</span>
                 </p>
                 <Link to="/make-balanced-bowl">
                   <button
                     className="btn btn-primary"
                     style={{ fontSize: "1rem", marginTop: '1em' }}
                   >
-                    Make Your Balanced Bowl
+                    {lang.MAKE_A_BALANCED_BOWL}
                   </button>
                 </Link>
               </div>
