@@ -13,9 +13,11 @@ import { lang, activeLocale } from "../../language/index";
 export default class MaggiSectionComponent extends React.PureComponent {
   state = {
     isMobile: false,
+    activeLang: 'en'
   };
 
   componentDidMount() {
+    this.setState({ activeLang: activeLocale});
     if (window.innerWidth <= 1159) {
       this.setState({
         isMobile: true
@@ -35,10 +37,10 @@ export default class MaggiSectionComponent extends React.PureComponent {
   }
 
   render() {
-    const { isMobile } = this.state;
+    const { isMobile, activeLang } = this.state;
     return (
       <>
-        <div className={`why-maggi ${activeLocale === 'bm' ? 'bm-lang' : ''}`} id="">
+        <div className={`why-maggi ${activeLang === 'bm' ? 'bm-lang' : ''}`} id="">
           {
             isMobile &&
             <>
@@ -52,7 +54,7 @@ export default class MaggiSectionComponent extends React.PureComponent {
             {lang.WHY_MAGGI_DES_2}
           </p>
         </div>
-        <div className={`columns custom-mobile why-maggi-des ${activeLocale === 'bm' ? 'bm-lang' : ''}`} style={{ margin: 0 }}>
+        <div className={`columns custom-mobile why-maggi-des ${activeLang === 'bm' ? 'bm-lang' : ''}`} style={{ margin: 0 }}>
           <div
             className="column is-8-desktop is-8-widescreen is-8-fullhd custom-mobile-ingredient"
             style={{ width: "64%", margin: 'auto' }}

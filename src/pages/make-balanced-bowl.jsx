@@ -58,6 +58,7 @@ export default class MakeBalancedBowlPage extends Component {
     },
     waringModalVisible: false,
     warningModalMes: "",
+    activeLang: 'en'
   };
   setTooltip = (event) => {
     const tt = event.currentTarget.getElementsByClassName("st-tooltip")[0];
@@ -268,12 +269,18 @@ export default class MakeBalancedBowlPage extends Component {
         );
     }
   }
+
+  componentDidMount() {
+    this.setState({
+      activeLang: activeLocale
+    })
+  }
   render() {
     return (
       <>
         <Layout bg={this.state.activeStep.id === 4 ? bgImageLarge : bgImage}>
           <SEO title={lang.MAKE_A_BALANCED_BOWL} />
-          <div className={"mbb-main-content " + activeLocale}>
+          <div className={"mbb-main-content " + this.state.activeLang}>
             <div className="step-content-wrapper">
               <div className="step-header">
                 <h1 className="title">{lang.MAKE_YOUR_BALANCED_BOWL}</h1>

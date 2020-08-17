@@ -109,7 +109,7 @@ export default class CarouselSection extends React.PureComponent {
   state = {
     currentSlide: 0,
     isMobile: false,
-    lang: 'en'
+    activeLang: 'en'
   };
   next = () => {
     const { currentSlide } = this.state;
@@ -149,7 +149,7 @@ export default class CarouselSection extends React.PureComponent {
         isMobile: true,
       })
     }
-    this.setState({ lang: activeLocale === 'en' ? 'en' : 'bm'});
+    this.setState({ activeLang: activeLocale });
     window.addEventListener('resize', () => {
       if (window.innerWidth <= 1159) {
         this.setState({
@@ -167,7 +167,7 @@ export default class CarouselSection extends React.PureComponent {
     let isDisplayProtein = false;
     let isDisplayCarbon = false;
     let isDisplayVege = false;
-    const { currentSlide, isMobile, lang } = this.state;
+    const { currentSlide, isMobile, activeLang } = this.state;
     if (currentSlide === 0) {
       isDisplayProtein = true;
       isDisplayCarbon = true;
@@ -179,9 +179,9 @@ export default class CarouselSection extends React.PureComponent {
     } else if (currentSlide === 3) {
       isDisplayVege = true;
     }
-    console.log(activeLocale, lang);
+
     return (
-      <div className={`main-carousel ${lang === 'bm' ? 'bm-lang' : ''}`} >
+      <div className={`main-carousel ${activeLang === 'bm' ? 'bm-lang' : ''}`} >
         {
           isMobile &&
           <>

@@ -10,6 +10,12 @@
     font-weight: 500;
     margin-bottom: 0.5em;
   }
+  .main-carousel.bm-lang .main-carousel-balance-bowl-vegetable span {
+    right: 1em !important;
+  }
+  .main-carousel.bm-lang .main-carousel-balance-bowl-carbohydrates span {
+    left: 4.5em !important;
+  }
   .landing-page {
     background: url("../../images/layout/Maggi Website_plain bg_1024px.jpg");
     background-repeat: no-repeat;
@@ -111,6 +117,11 @@
     .description {
       padding: 0 4em !important;
     }
+     &.bm-lang {
+      .carousel {
+        height: 18rem !important;
+      }
+    }
   }
   .steps {
     padding: 0 !important;
@@ -137,6 +148,7 @@
     &.mobile-step-3 {
       padding-top: 2em !important;
     }
+
   }
   .why-maggi {
     padding: 5em 0em !important;
@@ -194,7 +206,7 @@
     &-header {
       padding: 1em !important;
       span {
-        font-size: 13px !important;
+        font-size: 10px !important;
       }
       h1 {
         margin-top: .1em !important;
