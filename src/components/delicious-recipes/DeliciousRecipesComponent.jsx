@@ -147,10 +147,12 @@ const tomyum_vegetables = {
 export default class DeliciousRecipiesComponent extends React.PureComponent {
   state = {
     isMobile: false,
-    currentSlide: 0
+    currentSlide: 0,
+    activeLang: 'en'
   };
 
   componentDidMount() {
+    this.setState({ activeLang: activeLocale });
     AOS.init({
       offset: 0,
       duration: 600,
@@ -209,11 +211,11 @@ export default class DeliciousRecipiesComponent extends React.PureComponent {
   };
 
   render() {
-    const {isMobile} = this.state;
+    const { isMobile, activeLang} = this.state;
     const hideArrowBtn = window.innerWidth < 400 ? true : false;
     return (
       <>
-        <div data-aos="fade-up" data-aos-offset="0" className={`delicious-recipes ${activeLocale === 'bm' ? 'bm-lang' : ''}`} id="">
+        <div data-aos="fade-up" data-aos-offset="0" className={`delicious-recipes ${activeLang === 'bm' ? 'bm-lang' : ''}`} id="">
           {
             isMobile &&
             <>
