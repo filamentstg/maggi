@@ -75,7 +75,8 @@ export const html2png = (html, callback) => {
     color: #5e3266;
     font-size: 1.15rem;
     padding-left: 50%;
-    font-family: AvenirNext;
+	font-family: AvenirNext;
+	text-transform: uppercase;
 }
 .line-title::before {
     content: "";
@@ -135,7 +136,7 @@ export const html2png = (html, callback) => {
     padding-top: 7px;
 }
 .result-calc {
-    width: 87%;
+    width: 90%;
     background-color: #fffcf5;
     border: 1px solid #dcc99b;
     border-radius: 10px;
@@ -154,17 +155,19 @@ export const html2png = (html, callback) => {
     font-family: AvenirNext;
 }
 .row-line .col1 {
-    width: 200px;
+    width: 230px;
     border-right: 1px solid #dcc99b;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
+	text-transform: uppercase;
 }
 .row-line .col2 {
 	width: 100%;
 	text-align: center;
+	text-transform: uppercase;
 }
 .row-line.row-title .col1 {
     padding: 10px 0;

@@ -34,11 +34,10 @@ $text-size: 1rem;
   -webkit-overflow-scrolling: touch;
 }
 html {
-
 }
 body {
   font-family: AvenirNextRegurlar;
-   scroll-behavior: smooth;
+  scroll-behavior: smooth;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   height: 100%;
@@ -112,6 +111,9 @@ button {
 .one-line {
   white-space: nowrap;
 }
+.uppercase {
+  text-transform: uppercase;
+}
 .mobile-menu {
   height: 100%;
   width: 100%;
@@ -121,7 +123,7 @@ button {
   background-color: #fff;
   // opacity: 0.9;
   z-index: 5;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
   &-close-btn {
     top: 3em;
     cursor: pointer;

@@ -103,7 +103,7 @@ const MbbFinal = ({ lang, selection }) => {
 				<div className="result-selection">
 					<span className="bd-right"></span>
 					<div>
-						<div className="line-title">
+						<div className="line-title uppercase">
 							{lang.CARBOHYDRATES}
 						</div>
 						<div className="line-content">
@@ -127,7 +127,7 @@ const MbbFinal = ({ lang, selection }) => {
 					</div>
 
 					<div>
-						<div className="line-title">
+						<div className="line-title uppercase">
 							{lang.PROTEIN}
 						</div>
 						<div className="line-content">
@@ -151,7 +151,7 @@ const MbbFinal = ({ lang, selection }) => {
 					</div>
 
 					<div>
-						<div className="line-title">
+						<div className="line-title uppercase">
 							{lang.VEGETABLES}
 						</div>
 						<div className="line-content">
