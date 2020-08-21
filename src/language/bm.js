@@ -95,7 +95,7 @@ export const MAKE_BALANCEC_BOWL_LANG = {
 	SELECTED_INGREDIENT_DES_2: 'Rasa asli perencah MAGGI® diperbuat daripada bahan pilihan yang terbaik sahaja demi Gabungan rempah-ratus yang terpilih untuk menghasilkan rasa asli dalam setiap hidangan Mi MAGGI rasa mi anda',
 	CONVENIENCE: 'Mudah',
 	CONVENIENCE_DES: 'Mi MAGGI® boleh disediakan dalam masa 2 minit',
-	DELICIOUS_RECIPES: 'Delicious Recipes',
+	DELICIOUS_RECIPES: 'Resipi yang Lazat',
 	CURRY: 'Kari',
 	CURRY_DES: 'MAGGI® Kari',
 	CHICKEN: 'Ayam',
