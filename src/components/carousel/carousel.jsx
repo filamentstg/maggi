@@ -41,7 +41,7 @@ const Step_1 = () => {
       </div>
       <div className="columns is-gapless is-mobile">
         <div className="column is-6">
-          <span className="sub-title-custom">1 {lang.FISTFUL}</span>
+          <span className="sub-title-custom">1 {lang.FISTFUL_1}</span>
         </div>
         <div className="column is-6">
           <span className="sub-title-custom">1 {lang.PACKET}</span>
@@ -98,7 +98,7 @@ const Step_3 = () => {
           <span className="sub-title-custom">{lang.HANDFUL_1}</span>
         </div>
         <div className="column is-6">
-          <span className="sub-title-custom">{lang.VEGETEBLES}</span>
+          <span className="sub-title-custom">{lang.VEGETABLES}</span>
         </div>
       </div>
     </>
@@ -250,7 +250,7 @@ export default class CarouselSection extends React.PureComponent {
               ></span>
               <div>
                 <Carousel
-                  autoPlay={false}
+                  autoPlay={true}
                   infiniteLoop
                   interval={4000}
                   statusFormatter={() => ""}
