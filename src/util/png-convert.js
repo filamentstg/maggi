@@ -112,7 +112,8 @@ export const html2png = (html, callback) => {
     color: #72553c;
     font-weight: 600;
     font-size: 1rem;
-    font-family: AvenirNext;
+	font-family: AvenirNext;
+	text-transform: uppercase;
 }
 .cri-result {
     min-width: 200px;
@@ -174,7 +175,10 @@ export const html2png = (html, callback) => {
 }
 .row-line .col2.percent-detail {
     display: flex;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
+	height: 100px;
+	justify-content: center;
+	align-items: center;
 }
 .row-line .cal-number {
     display: block;
@@ -191,22 +195,6 @@ export const html2png = (html, callback) => {
     display: block;
     font-family: AvenirNext;
 }
-.row-line .col2.percent-detail div {
-    width: 49%;
-    padding: 10px 0;
-}
-.col2.percent-detail div:first-child {
-    border-bottom: 1px solid #dcc99b;
-    border-right: 1px solid #dcc99b;
-}
-.col2.percent-detail div:nth-child(2) {
-    border-bottom: 1px solid #dcc99b;
-}
-.col2.percent-detail div:nth-child(3) {
-    border-right: 1px solid #dcc99b;
-}
-
-
   </style>
   `;
 

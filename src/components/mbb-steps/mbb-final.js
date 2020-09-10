@@ -109,9 +109,10 @@ const MbbFinal = ({ lang, selection }) => {
 						<div className="line-content">
 							<div className="criteria">
 								<div>
-									<img src={require(`../../images/make-balanced-bowl/final/palmful.png`)} />
+									<img src={require(`../../images/make-balanced-bowl/final/fistful.png`)} />
 								</div>
-								<span className="__des">{lang.PALMFUL}</span>
+								<span className="__des">{lang.AFISTFUL}</span>
+
 							</div>
 							<div className="cri-result">
 								{
@@ -133,9 +134,9 @@ const MbbFinal = ({ lang, selection }) => {
 						<div className="line-content">
 							<div className="criteria">
 								<div>
-									<img src={require(`../../images/make-balanced-bowl/final/fistful.png`)} />
+									<img src={require(`../../images/make-balanced-bowl/final/palmful.png`)} />
 								</div>
-								<span className="__des">{lang.FISTFUL}</span>
+								<span className="__des">{lang.PALMFUL}</span>
 							</div>
 							<div className="cri-result">
 								{
@@ -185,26 +186,26 @@ const MbbFinal = ({ lang, selection }) => {
 					</div>
 					<div className="row-line row-content">
 						<div className="col1">
-							<span className="cal-number">{totalCal.toFixed(2)}</span>
+							<span className="cal-number">{totalCal.toFixed(0)}</span>
 							<span className="kcal">{lang.KCAL}</span>
 						</div>
 						<div className="col2 percent-detail">
 							<div>
-								<span className="per-label">{lang.CHILDREN}</span>
-								<span className="cal-number">{(totalCal / NEEDED_CAL.CHIDLREN * 100).toFixed(2)}%</span>
+								{/* <span className="per-label">{lang.CHILDREN}</span> */}
+								<span className="cal-number">{(totalCal / NEEDED_CAL.CHIDLREN * 100).toFixed(0)}%</span>
 							</div>
-							<div>
+							{/* <div>
 								<span className="per-label">{lang.SENIORS}</span>
-								<span className="cal-number">{(totalCal / NEEDED_CAL.SENIOR * 100).toFixed(2)}%</span>
+								<span className="cal-number">{(totalCal / NEEDED_CAL.SENIOR * 100).toFixed(0)}%</span>
 							</div>
 							<div>
 								<span className="per-label">{lang.FEMALE}</span>
-								<span className="cal-number">{(totalCal / NEEDED_CAL.FEMALE * 100).toFixed(2)}%</span>
+								<span className="cal-number">{(totalCal / NEEDED_CAL.FEMALE * 100).toFixed(0)}%</span>
 							</div>
 							<div>
 								<span className="per-label">{lang.MALE}</span>
-								<span className="cal-number">{(totalCal / NEEDED_CAL.MALE * 100).toFixed(2)}%</span>
-							</div>
+								<span className="cal-number">{(totalCal / NEEDED_CAL.MALE * 100).toFixed(0)}%</span>
+							</div> */}
 						</div>
 					</div>
 				</div>
