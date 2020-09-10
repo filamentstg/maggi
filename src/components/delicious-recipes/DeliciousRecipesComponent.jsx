@@ -44,9 +44,9 @@ import AOS from "aos";
 
 const curry_carbohydrates = {
   header: `url(${line})`,
-  left_image: `url(${palm})`,
+  left_image: `url(${fistful})`,
   right_image: `url(${noddle_1})`,
-  left_title: lang.A_PALM_SIZE,
+  left_title: lang.FISTFUL,
   right_title: lang.CURRY_DES,
   header_title: lang.CARBOHYDRATES,
   color: "#AF3837",
@@ -54,10 +54,10 @@ const curry_carbohydrates = {
 
 const curry_protein = {
   header: `url(${line})`,
-  left_image: `url(${fistful})`,
+  left_image: `url(${palm})`,
   right_image_1: `url(${chicken})`,
   right_image_2: `url(${egg})`,
-  left_title: lang.FISTFUL,
+  left_title: lang.A_PALM_SIZE,
   right_title_1: lang.CHICKEN_BREAST_1,
   right_title_2: lang.HARD_BOIL_EGG,
   header_title: "Protein",
@@ -78,9 +78,9 @@ const curry_vegetables = {
 
 const chicken_carbohydrates = {
   header: `url(${line2})`,
-  left_image: `url(${palm})`,
+  left_image: `url(${fistful})`,
   right_image: `url(${noddle_2})`,
-  left_title: lang.PALMFUL,
+  left_title: lang.FISTFUL,
   right_title: lang.CHICKEN_DES,
   header_title: lang.CARBOHYDRATES,
   color: "#7DA03E",
@@ -88,10 +88,10 @@ const chicken_carbohydrates = {
 
 const chicken_protein = {
   header: `url(${line2})`,
-  left_image: `url(${fistful})`,
+  left_image: `url(${palm})`,
   right_image_1: `url(${chicken})`,
   right_image_2: `url(${egg})`,
-  left_title: lang.FISTFUL,
+  left_title: lang.A_PALM_SIZE,
   right_title_1: lang.CHICKEN_BREAST_2,
   right_title_2: lang.HARD_BOIL_EGG,
   header_title: lang.PROTEIN,
@@ -112,9 +112,9 @@ const chicken_vegetables = {
 
 const tomyum_carbohydrates = {
   header: `url(${line3})`,
-  left_image: `url(${palm})`,
+  left_image: `url(${fistful})`,
   right_image: `url(${noddle_3})`,
-  left_title: lang.PALMFUL,
+  left_title: lang.FISTFUL,
   right_title: lang.TOM_YAM_DES,
   header_title: lang.CARBOHYDRATES,
   color: "#5E3266",
@@ -122,10 +122,10 @@ const tomyum_carbohydrates = {
 
 const tomyum_protein = {
   header: `url(${line3})`,
-  left_image: `url(${fistful})`,
+  left_image: `url(${palm})`,
   right_image_1: `url(${prawn})`,
   right_image_2: `url(${squid})`,
-  left_title: lang.FISTFUL,
+  left_title: lang.A_PALM_SIZE,
   right_title_1: lang.PRAWN,
   right_title_2: lang.SQUID,
   header_title: lang.PROTEIN,
