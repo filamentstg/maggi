@@ -38,7 +38,7 @@ const INGREDIENT_CAL = {
 }
 const NEEDED_CAL = {
 	CHIDLREN: 2000,
-	SENIOR: 1500,
+	SENIOR: 2000,
 	FEMALE: 2000,
 	MALE: 2500
 }
@@ -208,7 +208,11 @@ const MbbFinal = ({ lang, selection }) => {
 							</div> */}
 						</div>
 					</div>
+					<div className="adult-rec">
+						{lang.ADULT_REC.replace('{1}', NEEDED_CAL.SENIOR.toFixed(0))}
+					</div>
 				</div>
+
 
 			</div>
 		</div>

@@ -76,7 +76,7 @@ export const MAKE_BALANCEC_BOWL_LANG = {
 	CAROUSEL_INSTRUCTION: 'Panduan ini bertujuan untuk membantu anda menyediakan hidangan yang seimbang dengan menggunakan mi segera dan pelbagai bahan segar untuk seisi keluarga di keselesaan rumah anda',
 	SWIPE_RIGHT: 'Leret ke kanan untuk ketahui lebih lanjut',
 	STEP_1_DES: 'Pilih Mi MAGGI® kegemaran anda sebagai sumber karbohidrat pilihan anda',
-  FISTFUL_1: 'Genggaman',
+	FISTFUL_1: 'Genggaman',
 	PACKET: 'Pek',
 	STEP_2_DES: 'Pilih protein untuk mi anda',
 	PALM_SIZE: 'Tapak tangan',
@@ -114,5 +114,8 @@ export const MAKE_BALANCEC_BOWL_LANG = {
 	SQUID: 'Sotong',
 	CAULIFLOWER: 'Kubis Bunga',
 	STRAW_MUSHROOM: 'Cendawan Jerami',
-	CUSTOMMIZE_YOUR_BALANCED_BOWL: 'Reka Sajian Seimbang Anda '
+	CUSTOMMIZE_YOUR_BALANCED_BOWL: 'Reka Sajian Seimbang Anda',
+	STEP_HINT_1: '*Jika pilih satu jenis bahan -> sajian yang disyorkan: 1 Sajian',
+	STEP_HINT_2: '*Jika pilih dua jenis bahan -> sajian yang disyorkan: 1 Sajian',
+	ADULT_REC: 'Berdasarkan keperluan tenaga harian purata {1}kcal untuk golongan dewasa'
 }

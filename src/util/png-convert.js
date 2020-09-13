@@ -144,7 +144,7 @@ export const html2png = (html, callback) => {
 	color: #6d5b3a;
 	align-self: flex-end;
 	margin-bottom: 30px;
-	overflow: hidden;
+	position: relative;
 }
 .row-line {
     display: flex;
@@ -194,6 +194,11 @@ export const html2png = (html, callback) => {
 .row-line .cal-number {
     display: block;
     font-family: AvenirNext;
+}
+.adult-rec {
+	position: absolute;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
   </style>
   `;

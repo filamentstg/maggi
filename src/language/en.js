@@ -112,5 +112,8 @@ export const MAKE_BALANCEC_BOWL_LANG = {
 	SQUID: 'Squid',
 	CAULIFLOWER: 'Cauliflower',
 	STRAW_MUSHROOM: 'Straw Mushrooms',
-	CUSTOMMIZE_YOUR_BALANCED_BOWL: 'Customise your own Balanced Bowl'
+	CUSTOMMIZE_YOUR_BALANCED_BOWL: 'Customise your own Balanced Bowl',
+	STEP_HINT_1: '*If selecting one ingredient -> recommended portion: 1 Serving',
+	STEP_HINT_2: '*If selecting two ingredients -> recommended portion: 1/2 Serving',
+	ADULT_REC: 'Based on the average daily energy requirement of {1}kcal for adults'
 }

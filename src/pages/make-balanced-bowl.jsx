@@ -226,6 +226,10 @@ export default class MakeBalancedBowlPage extends Component {
 								{lang.NEXT}
 							</button>
 						</div>
+						<div className="step-hint">
+							<p>{lang.STEP_HINT_1}</p>
+							<p>{lang.STEP_HINT_2}</p>
+						</div>
 					</div>
 				);
 			case 3:
@@ -244,6 +248,10 @@ export default class MakeBalancedBowlPage extends Component {
 							<button className="btn btn-primary" onClick={this.nextStep}>
 								{lang.NEXT}
 							</button>
+						</div>
+						<div className="step-hint">
+							<p>{lang.STEP_HINT_1}</p>
+							<p>{lang.STEP_HINT_2}</p>
 						</div>
 					</div>
 				);
