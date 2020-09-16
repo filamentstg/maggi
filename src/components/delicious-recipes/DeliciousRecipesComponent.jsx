@@ -72,6 +72,7 @@ const curry_vegetables = {
   left_title: lang.HANDFUL,
   right_title_1: lang.SAWI,
   right_title_2: lang.CARROT,
+  right_title_3: lang.CARROT_SUB,
   header_title: lang.VEGETABLES,
   color: "#AF3837",
 };
@@ -106,6 +107,7 @@ const chicken_vegetables = {
   left_title: lang.HANDFUL,
   right_title_1: lang.BOK_CHOY,
   right_title_2: lang.CARROT_2,
+  right_title_3: lang.CARROT_2_SUB,
   header_title: lang.VEGETABLES,
   color: "#7DA03E",
 };
