@@ -4,7 +4,7 @@ module.exports = {
 		description: `MAGGI® 2-Minute Noodles are carbohydrate-rich foods like rice, cereal and potato that can be used to prepare balanced dishes for your family! Apart from the delicious taste and aroma that you know and love, you can also enjoy the following benefits of cooking with MAGGI® 2-Minute Noodles`,
 		author: `@filament`,
 	},
-	pathPrefix: '/maggi',
+	pathPrefix: '/',
 	plugins: [
 		`gatsby-plugin-react-helmet`,
 		{
@@ -38,7 +38,7 @@ module.exports = {
 				background_color: `#663399`,
 				theme_color: `#663399`,
 				display: `minimal-ui`,
-        icon: `src/images/MYBB Favicon-01.png`, // This path is relative to the root of the site.
+				icon: `src/images/MYBB Favicon-01.png`, // This path is relative to the root of the site.
 			},
 		},
 

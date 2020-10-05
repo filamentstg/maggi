@@ -1,26 +1,26 @@
 @font-face {
-  font-family: HandOFSean;
-  src: url("/maggi/fonts/Hand_Of_Sean_Demo.ttf");
+	font-family: HandOFSean;
+	src: url("/fonts/Hand_Of_Sean_Demo.ttf");
 }
 @font-face {
-  font-family: Avenir;
-  src: url("/maggi/fonts/Avenir.ttc");
+	font-family: Avenir;
+	src: url("/fonts/Avenir.ttc");
 }
 @font-face {
-  font-family: AvenirNext;
-  src: url("/maggi/fonts/Avenir Next.ttc");
+	font-family: AvenirNext;
+	src: url("/fonts/Avenir Next.ttc");
 }
 @font-face {
-  font-family: AvenirNextRegurlar;
-  src: url("/maggi/fonts/AvenirNextLTPro-Regular.otf");
+	font-family: AvenirNextRegurlar;
+	src: url("/fonts/AvenirNextLTPro-Regular.otf");
 }
 @font-face {
-  font-family: AvenirBlack;
-  src: url("/maggi/fonts/Avenir-Black.otf");
+	font-family: AvenirBlack;
+	src: url("/fonts/Avenir-Black.otf");
 }
 @font-face {
-  font-family: MyriadPro;
-  src: url("/maggi/fonts/MyriadPro-Regular.otf");
+	font-family: MyriadPro;
+	src: url("/fonts/MyriadPro-Regular.otf");
 }
 
 $primary-color: #191919;
@@ -31,131 +31,131 @@ $subtitle-size: 2rem;
 $caption-size: 0.75rem;
 $text-size: 1rem;
 * {
-  -webkit-overflow-scrolling: touch;
+	-webkit-overflow-scrolling: touch;
 }
 html {
 }
 body {
-  font-family: AvenirNextRegurlar;
-  scroll-behavior: smooth;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
-  height: 100%;
+	font-family: AvenirNextRegurlar;
+	scroll-behavior: smooth;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+	height: 100%;
 }
 .caption {
-  font-size: $caption-size;
+	font-size: $caption-size;
 }
 .title {
-  font-size: $title-size;
+	font-size: $title-size;
 }
 .sub-title {
-  font-size: $subtitle-size;
+	font-size: $subtitle-size;
 }
 
 button {
-  outline: none !important;
+	outline: none !important;
 }
 
 .btn {
-  height: 45px;
-  display: inline-flex;
-  align-items: center;
-  padding: 0 35px;
-  font-weight: 600;
-  transition: all 0.3s ease-in;
-  border-radius: 9px;
-  border: none;
-  cursor: pointer;
-  font-family: AvenirNext;
-  font-size: 1rem;
+	height: 45px;
+	display: inline-flex;
+	align-items: center;
+	padding: 0 35px;
+	font-weight: 600;
+	transition: all 0.3s ease-in;
+	border-radius: 9px;
+	border: none;
+	cursor: pointer;
+	font-family: AvenirNext;
+	font-size: 1rem;
 }
 .btn-default {
 }
 
 .mr-10 {
-  margin-right: 10px;
+	margin-right: 10px;
 }
 
 .btn-primary {
-  background-color: $active-color;
-  color: #fff;
-  &:hover {
-    background-color: rgba(255, 165, 0, 0.82);
-    color: #fff;
-  }
+	background-color: $active-color;
+	color: #fff;
+	&:hover {
+		background-color: rgba(255, 165, 0, 0.82);
+		color: #fff;
+	}
 }
 .scroll-top-btn {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  z-index: 1;
-  &-main {
-    display: flex;
-    height: 48px;
-    width: 48px;
-    align-items: center;
-    justify-content: center;
-    background: rgba(237, 161, 28, 0.5);
-    border-radius: 100%;
-    border: 1px solid #fff;
-    transition: all 0.3s ease-in;
-    cursor: pointer;
-    &:hover {
-      background: rgba(237, 161, 28, 0.8);
-    }
-  }
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	z-index: 1;
+	&-main {
+		display: flex;
+		height: 48px;
+		width: 48px;
+		align-items: center;
+		justify-content: center;
+		background: rgba(237, 161, 28, 0.5);
+		border-radius: 100%;
+		border: 1px solid #fff;
+		transition: all 0.3s ease-in;
+		cursor: pointer;
+		&:hover {
+			background: rgba(237, 161, 28, 0.8);
+		}
+	}
 }
 button {
-  font-family: AvenirBlack !important;
+	font-family: AvenirBlack !important;
 }
 .one-line {
-  white-space: nowrap;
+	white-space: nowrap;
 }
 .uppercase {
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 .mobile-menu {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  // opacity: 0.9;
-  z-index: 5;
-  transition: all 0.3s ease-out;
-  text-align: center;
-  &-close-btn {
-    top: 3em;
-    cursor: pointer;
-    position: absolute;
-    right: 3em;
-  }
-  &-container {
-    width: 80%;
-    height: 100%;
-    margin: auto;
-    padding-top: 7em;
-  }
-  &-item {
-    height: 25%;
-    line-height: 1.7em;
-    font-size: 40px;
-    font-family: "AvenirNext";
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &:hover {
-      color: #646464;
-      a {
-        color: #646464;
-      }
-    }
-    cursor: pointer;
-    a {
-      transition: color 0.3s ease-in;
-      color: $primary-color;
-      // color: #000;
-    }
-  }
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	// opacity: 0.9;
+	z-index: 5;
+	transition: all 0.3s ease-out;
+	text-align: center;
+	&-close-btn {
+		top: 3em;
+		cursor: pointer;
+		position: absolute;
+		right: 3em;
+	}
+	&-container {
+		width: 80%;
+		height: 100%;
+		margin: auto;
+		padding-top: 7em;
+	}
+	&-item {
+		height: 25%;
+		line-height: 1.7em;
+		font-size: 40px;
+		font-family: "AvenirNext";
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&:hover {
+			color: #646464;
+			a {
+				color: #646464;
+			}
+		}
+		cursor: pointer;
+		a {
+			transition: color 0.3s ease-in;
+			color: $primary-color;
+			// color: #000;
+		}
+	}
 }
